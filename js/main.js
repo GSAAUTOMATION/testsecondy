@@ -31,22 +31,32 @@ function updateLogo() {
     let isMobile = window.innerWidth <= 992;
 
     if (scrollTop > 50) {
-        // SCROLL ACTIVÉ
+        // 📌 SCROLL ACTIVÉ
         $('.navbar').addClass('scrolled');
-        $('#logo, #logos')
-            .attr('src', '../../img/logo-gsa-modified.svg')
-            .css('width', isMobile ? '3em' : '');
-    } else {
-        // EN HAUT DE LA PAGE
-        $('.navbar').removeClass('scrolled');
 
         if (isMobile) {
-            // MOBILE : logo modifié + largeur 3em
+            // Mobile en scroll → modifié (3em)
             $('#logo, #logos')
                 .attr('src', '../../img/logo-gsa-modified.svg')
                 .css('width', '3em');
         } else {
-            // DESKTOP : logo normal
+            // Desktop en scroll → modifié (5em)
+            $('#logo, #logos')
+                .attr('src', '../../img/logo-gsa-modified.svg')
+                .css('width', '5em');
+        }
+
+    } else {
+        // 📌 EN HAUT DE LA PAGE
+        $('.navbar').removeClass('scrolled');
+
+        if (isMobile) {
+            // Mobile en haut → modifié (3em)
+            $('#logo, #logos')
+                .attr('src', '../../img/logo-gsa-modified.svg')
+                .css('width', '3em');
+        } else {
+            // Desktop en haut → normal (5em)
             $('#logo, #logos')
                 .attr('src', '../../img/colorkit (2).svg')
                 .css('width', '5em');
@@ -62,6 +72,7 @@ $(window).on('resize', updateLogo);
 
 // Mise à jour au chargement initial
 $(document).ready(updateLogo);
+
 
 // ✅ Correction du retard → on force l’état correct dès le load
 $(window).trigger('scroll');  
