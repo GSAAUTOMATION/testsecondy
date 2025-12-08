@@ -33,20 +33,23 @@ function updateLogo() {
     if (scrollTop > 50) {
         // SCROLL ACTIVÉ
         $('.navbar').addClass('scrolled');
-        $('#logo, #logos').attr('src', '../../img/logo-gsa-modified.svg');
+        $('#logo, #logos')
+            .attr('src', '../../img/logo-gsa-modified.svg')
+            .css('width', isMobile ? '3em' : '');
     } else {
         // EN HAUT DE LA PAGE
         $('.navbar').removeClass('scrolled');
 
-   if (isMobile) {
-    // MOBILE : logo modifié + largeur 3em
-    $('#logo, #logos')
-        .attr('src', '../../img/logo-gsa-modified.svg')
-        .css('width', '3em');
-}
- else {
+        if (isMobile) {
+            // MOBILE : logo modifié + largeur 3em
+            $('#logo, #logos')
+                .attr('src', '../../img/logo-gsa-modified.svg')
+                .css('width', '3em');
+        } else {
             // DESKTOP : logo normal
-            $('#logo, #logos').attr('src', '../../img/colorkit (2).svg');
+            $('#logo, #logos')
+                .attr('src', '../../img/colorkit (2).svg')
+                .css('width', '');
         }
     }
 }
@@ -54,7 +57,7 @@ function updateLogo() {
 // Mise à jour au scroll
 $(window).on('scroll', updateLogo);
 
-// Mise à jour au resize (nécessaire pour mobile/desktop)
+// Mise à jour au resize
 $(window).on('resize', updateLogo);
 
 // Mise à jour au chargement initial
