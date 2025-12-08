@@ -28,50 +28,38 @@ $(window).scroll(function () {
 // Navbar + Logo change au scroll
 function updateLogo() {
     let scrollTop = $(window).scrollTop();
-    let isMobile = window.innerWidth <= 992;
+    let width, src;
 
-    if (scrollTop > 50) {
-        // 📌 SCROLL ACTIVÉ
-        $('.navbar').addClass('scrolled');
-
-        if (isMobile) {
-            // Mobile en scroll → modifié (3em)
-            $('#logo, #logos')
-                .attr('src', '../../img/logo-gsa-modified.svg')
-                .css('width', '3em');
-        } else {
-            // Desktop en scroll → modifié (5em)
-            $('#logo, #logos')
-                .attr('src', '../../img/logo-gsa-modified.svg')
-                .css('width', '5em');
-        }
-
+    if (window.innerWidth <= 500) {
+        // Mobile petit
+        width = '3em';
+        src = '../../img/logo-gsa-modified.svg';
+    } else if (window.innerWidth <= 992) {
+        // Mobile/tablette moyen
+        width = '5em';
+        src = '../../img/logo-gsa-modified.svg';
     } else {
-        // 📌 EN HAUT DE LA PAGE
-        $('.navbar').removeClass('scrolled');
+        // Grand desktop
+        width = '5em';
+        src = scrollTop > 50 
+              ? '../../img/logo-gsa-modified.svg' // scroll → modifié
+              : '../../img/colorkit (2).svg';    // haut → normal
+    }
 
-        if (isMobile) {
-            // Mobile en haut → modifié (3em)
-            $('#logo, #logos')
-                .attr('src', '../../img/logo-gsa-modified.svg')
-                .css('width', '3em');
-        } else {
-            // Desktop en haut → normal (5em)
-            $('#logo, #logos')
-                .attr('src', '../../img/colorkit (2).svg')
-                .css('width', '5em');
-        }
+    $('#logo, #logos').attr('src', src).css('width', width);
+
+    // Navbar scroll class (pour grand desktop)
+    if (scrollTop > 50) {
+        $('.navbar').addClass('scrolled');
+    } else {
+        $('.navbar').removeClass('scrolled');
     }
 }
 
-// Mise à jour au scroll
-$(window).on('scroll', updateLogo);
-
-// Mise à jour au resize
-$(window).on('resize', updateLogo);
-
-// Mise à jour au chargement initial
+// Mise à jour au scroll et resize
+$(window).on('scroll resize', updateLogo);
 $(document).ready(updateLogo);
+
 
 
 // ✅ Correction du retard → on force l’état correct dès le load
