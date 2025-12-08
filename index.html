@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Service Details - GSA</title>
+    <link rel="icon" type="image/svg+xml" href="./img/logo-gsa-modified.svg">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+   <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show">
+        <img src="./img/logo-gsa-modified.svg" alt="Loading..." id="logo-spinner" />
+    </div>
+
+<body class="page"> 
+<!-- Topbar Start -->
+<div class="container-fluid topbar d-none d-xl-block w-100">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <!-- ✅ الجزء الأيسر: العنوان + الهاتف + البريد -->
+     <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+  <div class="d-flex flex-wrap topbar">
+    <a href="#" class="me-4">
+      <i class="fas fa-phone-alt me-2"></i>+01234567890
+    </a>
+    <a href="#" class="me-4">
+      <i class="fas fa-phone-alt me-2"></i>+01234568890
+    </a>
+ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chatranechahbouni442@gmail.com" 
+   target="_blank" 
+   class="me-4">
+  <i class="fas fa-envelope me-2"></i>
+  GSA@AUTOMATION.com
+</a>
+
+
+  </div>
+</div>
+
+
+        <!-- ✅ الجزء الأيمن: النص المتحرك + أيقونات الشبكات -->
+        <div class="col-lg-6 text-center text-lg-end d-flex align-items-center justify-content-end">
+            
+            <!-- النص المتحرك -->
+            <div class="scrolling-text me-3">
+                <span>Solutions et Services pour les entreprises partout : 7/7</span>
+            </div>
+
+            <!-- أيقونات السوشيال ميديا -->
+           <a href="https://www.facebook.com/profile.php?id=100083003822768" target="_blank" class="btn btn-primary btn-square border border-white me-3">
+  <i class="fa-brands fa-facebook-f" title="Facebook"> </i>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=213655661704"  target="_blank" class="btn btn-primary btn-square border border-white me-3">
+  <i class="fa-brands fa-whatsapp" title="whatsapp"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/jskamazigh-jskiste-3a5a3737b" target="_blank" class="btn btn-primary btn-square border border-white me-3">
+  <i class="fa-brands fa-linkedin-in" title="linkedin" ></i>
+</a>
+
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+  <!-- Navbar & Hero Start -->
+<div class="container-fluid sticky-top px-0">
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
+    <a href="index.html" class="navbar-brand p-0">
+      <img id="logos" src="./img/logo-gsa-modified.svg" alt="Logo" style="width:5em;">
+    </a>
+
+    <!-- Toggler moderne -->
+    <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+       <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="a_propos.html" class="nav-link">About us</a></li>
+
+<!-- Dropdown Services -->
+<li class="nav-item dropdown">
+
+  <!-- Mobile version: text + + / - button -->
+  <div class="d-flex align-items-center justify-content-between d-lg-none">
+    <a href="index.html#services" class="nav-link" data-scroll="#services">Services</a>
+    <button class="btn btn-sm toggle-btn">+</button>
+  </div>
+
+  <!-- Desktop version: classic dropdown -->
+  <a href="index.html#services"
+     class="nav-link d-none d-lg-block dropdown-toggle"
+     data-bs-toggle="dropdown"
+     data-scroll="#services">
+    Services
+  </a>
+
+  <!-- Dropdown menu -->
+  <ul class="dropdown-menu bg-light">
+    
+    <li><a href="s_automatisme.html" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Automation & Control Systems
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
+
+    <li><a href="s_installation.html" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Installation & Commissioning
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
+
+    <li><a href="s_ingenerie.html" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Engineering & Technical Studies
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
+
+    <li><a href="s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Maintenance & Troubleshooting
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
+
+    <li><a href="s_process.html" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Process Equipment Manufacturing & Installation
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
+
+    <li><a href="s_GTC.html" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Building Technical Management (BMS/GTC)
+    </a></li>
+
+  </ul>
+</li>
+
+<li class="nav-item"><a href="index.html#secteurs" class="nav-link">Our Sectors</a></li>
+<li class="nav-item"><a href="projets.html" class="nav-link">Our Projects</a></li>
+
+<!-- Language -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+    <i class="fas fa-globe me-1"></i> Language
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end bg-light">
+    <li><a href="/pages/fr/contact.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> French</a></li>
+    <li><a href="/pages/en/contact.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> English</a></li>
+  </ul>
+</li>
+
+<li class="nav-item">
+  <a href="contact.html" class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0">Contact Us</a>
+</li>
+</ul>
+
+<!-- Icônes sociales (mobile uniquement) -->
+<div class="mobile-social d-lg-none">
+  <a href="https://api.whatsapp.com/send?phone=213655661704" target="_blank" class="text-success me-3">
+    <i class="fab fa-whatsapp fa-lg"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/gsa-automation/" target="_blank" class="text-primary me-3">
+    <i class="fab fa-linkedin fa-lg"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1WLmhY6vk9/" target="_blank" class="text-primary">
+    <i class="fab fa-facebook fa-lg"></i>
+  </a>
+</div>
+    </div>
+  </nav>
+</div>
+<!-- 🔹 Overlay ajouté ici -->
+<div class="nav-overlay" id="navOverlay"></div>
+<style>
+@media (max-width: 991.98px) {
+  .navbar .btn.btn-secondary {
+    margin-top: 15px;  /* 🔽 espace ajouté en haut */
+    display: block;
+       /* bouton pleine largeur si tu veux */
+  }
+}
+
+  </style>
+</body>
+     <!--<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+            const currentUrl = window.location.href;
+
+            navLinks.forEach(link => {
+                // Mark as active if href matches current full URL
+                if (link.href === currentUrl) {
+                    link.classList.add("active");
+                }
+
+                // Handle click events
+                link.addEventListener("click", function () {
+                    navLinks.forEach(nav => nav.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script> -->
+
+    <!-- Navbar & Hero End -->
+ <!-- ====== Video Section ====== -->
+<!-- ====== Video Section ====== -->
+<div class="video-section">
+  <video autoplay muted loop playsinline>
+    <source src="./videos/videobackground.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Title overlay -->
+  <div class="video-title">
+ 
+    <h2>Contact</h2>
+  </div>
+</div>
+
+<style>
+/* ===== Base container ===== */
+.video-section {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;   /* centre verticalement */
+  justify-content: center; /* centre horizontalement */
+  padding: 0;            /* pas besoin de padding si tu veux du vrai centre */
+  overflow: hidden;
+  text-align: center;    /* aligne le texte au centre */
+}
+/* ===== Background video ===== */
+.video-section video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keep aspect ratio, cover area */
+  z-index: 0;
+}
+
+/* ===== Text overlay ===== */
+.video-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.video-title h4 {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 22px); /* responsive font */
+  font-weight: 800;
+   color: #fff;
+}
+
+.video-title h2 {
+  margin: 10px 0 0;
+  font-size: clamp(24px, 4vw, 42px); /* responsive font */
+  font-weight: 900;
+  color: #FF5E15;
+}
+
+/* ===== Tablet adjustments ===== */
+@media (max-width: 1200px) {
+    body {
+    padding-top: 70px;
+  }
+  html {
+    scroll-padding-top: 70px;
+  }
+  .video-section {
+    padding: 50px 5%;
+    justify-content: center; /* center text on tablets */
+    text-align: center;
+  }
+
+  .video-title h2 {
+    font-size: clamp(22px, 5vw, 34px);
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+@media (max-width: 576px) {
+  .video-section {
+    padding: 40px 10px;
+    min-height: 220px;
+  }
+
+  .video-title h4 {
+    font-size: 14px;
+  }
+
+  .video-title h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+</style>
+
+
+
+<!-- ===== SECTION CONTACT ===== -->
+<!-- ===== SECTION CONTACT ===== -->
+<div class="contact-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+<!-- ===== Left Text ===== -->
+<div class="col-lg-5 mb-4 mb-lg-0">
+  <h2 class="fw-bold text-primary mb-3">📩 Contact Us</h2>
+  <p>
+    Fill in the fields below, it will only take a few moments…  
+    Your message will be processed as quickly as possible!
+  </p>
+  <p>You can also reach us directly by phone, email, or WhatsApp:</p>
+
+  <ul class="list-unstyled contact-info">
+    <li>📞 <strong>France:</strong> 
+      <a href="tel:+33777578713">+33 7 77 57 87 13</a>
+    </li>
+    <li>📞 <strong>Algeria:</strong> 
+      <a href="tel:+213655661704">+213 655 66 17 04</a>
+    </li>
+    <li>📧 <strong>Email:</strong> 
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsaautomationcompany@gmail.com" target="_blank">
+        gsaautomationcompany@gmail.com
+      </a>
+    </li>
+    <li>💬 <strong>WhatsApp:</strong> 
+      <a href="https://wa.me/213655661704" target="_blank">Chat on WhatsApp</a>
+    </li>
+  </ul>
+</div>
+
+
+      <!-- ===== Right Form ===== -->
+<div class="col-lg-7">
+  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="p-4 bg-white rounded-4 shadow-sm">
+    <input type="hidden" name="access_key" value="027d7cfc-295f-4297-aeac-482c2ae8a4bd">
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Last Name*</label>
+        <input type="text" name="nom" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">First Name*</label>
+        <input type="text" name="prenom" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Company*</label>
+        <input type="text" name="societe" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Position*</label>
+        <select name="fonction" class="form-select" required>
+          <option value="">Select…</option>
+          <option>Engineer</option>
+          <option>Technical Manager</option>
+          <option>Director</option>
+          <option>Technician</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Email*</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Phone*</label>
+        <input type="tel" name="telephone" class="form-control" required>
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label">Preferred Call Time*</label>
+        <select name="preference" class="form-select" required>
+          <option value="">Select…</option>
+          <option value="Morning">Morning</option>
+          <option value="Afternoon">Afternoon</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <label class="form-label">Message*</label>
+        <textarea name="message" rows="5" class="form-control" placeholder="Your request..." required></textarea>
+      </div>
+
+      <div class="col-12 text-end">
+        <button class="btn btn-primary px-4 py-2 rounded-pill" type="submit">📨 Send</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== CSS ===== -->
+<style>
+.contact-section {
+  background-color: #f9fafc;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #001659;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #FF5E15;
+  text-decoration: underline;
+}
+
+form .form-label {
+  font-weight: 500;
+  color: #333;
+}
+</style>
+
+
+<!-- Modal Succès -->
+<div class="modal fade" id="statusSuccessModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center p-lg-4">
+        <svg viewBox="0 0 130.2 130.2">
+          <circle class="path circle" fill="none" stroke="#198754" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+          <polyline class="path check" fill="none" stroke="#198754" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+            points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+        </svg>
+       <h4 class="text-success mt-3">Thank you!</h4>
+<p class="mt-3">Your message has been sent successfully.</p>
+
+        <button type="button" class="btn btn-sm mt-3 btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Erreur -->
+<div class="modal fade" id="statusErrorsModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center p-lg-4">
+        <svg viewBox="0 0 130.2 130.2">
+          <circle class="path circle" fill="none" stroke="#db3646" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+          <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+            x1="34.4" y1="37.9" x2="95.8" y2="92.3" />
+          <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+            x1="95.8" y1="38" x2="34.4" y2="92.2" />
+        </svg>
+        <h4 class="text-danger mt-3">Error!</h4>
+<p class="mt-3">An issue occurred. Please try again.</p>
+
+        <button type="button" class="btn btn-sm mt-3 btn-danger" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.modal-content {
+  border-radius: 30px;
+}
+.modal-content svg {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.path {
+  stroke-dasharray: 1000;
+}
+.path.circle {
+  animation: dash 0.9s ease-in-out;
+}
+.path.line {
+  stroke-dashoffset: 1000;
+  animation: dash 0.95s 0.35s ease-in-out forwards;
+}
+.path.check {
+  stroke-dashoffset: -100;
+  animation: dash-check 0.95s 0.35s ease-in-out forwards;
+}
+@keyframes dash {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes dash-check {
+  0% { stroke-dashoffset: -100; }
+  100% { stroke-dashoffset: 900; }
+}
+
+    /* Styles essentiels pour le formulaire */
+    .contact-section { padding: 60px 0; }
+    .inputs-line { display: flex; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+    .inputs-line label { flex: 1; min-width: 180px; display: flex; flex-direction: column; font-weight: 500; }
+    input, select, textarea {
+      padding: 10px; border: 1px solid #ccc; border-radius: 8px; width: 100%;
+    }
+    .button.primary {
+      background: #BB2649; color: white; padding: 12px 25px;
+      border: none; border-radius: 25px; cursor: pointer; font-weight: bold;
+    }
+    .button.primary:hover { background: #a01f3d; }
+    .success-message { display: none; text-align: center; padding: 20px; color: #28a745; font-weight: bold; }
+    </style>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: formData
+  });
+
+  if (response.ok) {
+    this.reset();
+    var successModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'));
+    successModal.show();
+  } else {
+    var errorModal = new bootstrap.Modal(document.getElementById('statusErrorsModal'));
+    errorModal.show();
+  }
+});
+</script>
+
+
+   
+<!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Logo + Text -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column align-items-start">
+                    <img src="./img/colorkit (2).svg" alt="Logo" class="mb-3" style="max-width: 180px;">
+                    <p class="mb-0 text-white">
+                        Engineering and Implementation Company for Electrical & Automation Solutions
+                    </p>
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Explore</h4>
+                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="a_propos.html"><i class="fas fa-angle-right me-2"></i> About us</a>
+                    <a href="index.html#services"><i class="fas fa-angle-right me-2"></i> Services</a>
+                    <a href="index.html#projects"><i class="fas fa-angle-right me-2"></i> Our Sectors</a>
+                    <a href="projets.html"><i class="fas fa-angle-right me-2"></i> Our Projects</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Our Services</h4>
+                    <a href="s_automatisme.html"><i class="fas fa-angle-right me-2"></i> Automation & Control Systems</a>
+                    <a href="s_installation.html"><i class="fas fa-angle-right me-2"></i> Installation & Commissioning</a>
+                    <a href="s_ingenerie.html"><i class="fas fa-angle-right me-2"></i> Engineering & Technical Studies</a>
+                    <a href="s_maintenance_depannage.html"><i class="fas fa-angle-right me-2"></i> Maintenance & Troubleshooting</a>
+                    <a href="s_process.html"><i class="fas fa-angle-right me-2"></i> Process Equipment Manufacturing & Installation</a>
+                    <a href="s_GTC.html"><i class="fas fa-angle-right me-2"></i> Building Management Systems (BMS/GTC)</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Contact</h4>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsaautomationcompany@gmail.com"
+                       target="_blank"
+                       class="d-inline-flex align-items-center me-4 text-decoration-none">
+                        <i class="fas fa-envelope me-2"></i> gsaautomationcompany@gmail.com
+                    </a>
+
+                    <a href="https://wa.me/213655661704"
+                       target="_blank"
+                       class="d-inline-flex align-items-center me-4 text-decoration-none">
+                        <i class="fab fa-whatsapp me-2"></i> Chat on WhatsApp
+                    </a>
+
+                    <a href="tel:+33 7 77 57 87 13"><i class="fas fa-phone me-2"></i> France: +33 7 77 57 87 13</a>
+                    <a href="tel:+213655661704" class="mb-3"><i class="fas fa-phone me-2"></i> Algeria: +213 655 66 17 04</a>
+
+                    <div class="footer-item d-flex flex-column mt-3">
+                        <h4 class="text-white mb-4">Follow Us</h4>
+                        <div class="footer-btn d-flex align-items-center">
+                            <a class="btn btn-secondary btn-md-square me-2"
+                               href="https://www.facebook.com/share/1WLmhY6vk9/"
+                               target="_blank">
+                                <i class="fab fa-facebook-f text-white"></i>
+                            </a>
+
+                            <a class="btn btn-secondary btn-md-square me-0"
+                               href="https://www.linkedin.com/company/gsa-automation/"
+                               target="_blank">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+<!-- WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=213655661704"
+   target="_blank"
+   class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+   
+
+
+<!-- Font Awesome for the icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+<!-- Font Awesome for the icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <span class="text-body text-white">
+                    Copyright © GSA AUTOMATION - All rights reserved.
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+
+
+
+   <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+   
+
+    <!-- Template Javascript -->
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
