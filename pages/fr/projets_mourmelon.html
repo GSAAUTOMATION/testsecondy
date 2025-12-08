@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projet - GSA</title>
+    <link rel="icon" type="image/svg+xml" href="/img/logo-gsa-modified.svg">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+   <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show">
+        <img src="/img/logo-gsa-modified.svg" alt="Loading..." id="logo-spinner" />
+    </div>
+
+<body class="page"> 
+<!-- Topbar Start -->
+<div class="container-fluid topbar d-none d-xl-block w-100">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <!-- ✅ الجزء الأيسر: العنوان + الهاتف + البريد -->
+     <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+  <div class="d-flex flex-wrap topbar">
+    <a href="#" class="me-4">
+      <i class="fas fa-phone-alt me-2"></i>+01234567890
+    </a>
+    <a href="#" class="me-4">
+      <i class="fas fa-phone-alt me-2"></i>+01234568890
+    </a>
+ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chatranechahbouni442@gmail.com" 
+   target="_blank" 
+   class="me-4">
+  <i class="fas fa-envelope me-2"></i>
+  GSA@AUTOMATION.com
+</a>
+
+
+  </div>
+</div>
+
+
+        <!-- ✅ الجزء الأيمن: النص المتحرك + أيقونات الشبكات -->
+        <div class="col-lg-6 text-center text-lg-end d-flex align-items-center justify-content-end">
+            
+            <!-- النص المتحرك -->
+            <div class="scrolling-text me-3">
+                <span>Solutions et Services pour les entreprises partout : 7/7</span>
+            </div>
+
+            <!-- أيقونات السوشيال ميديا -->
+           <a href="https://www.facebook.com/profile.php?id=100083003822768" target="_blank" class="btn btn-primary btn-square border border-white me-3">
+  <i class="fa-brands fa-facebook-f" title="Facebook"> </i>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=213655661704"  target="_blank" class="btn btn-primary btn-square border border-white me-3">
+  <i class="fa-brands fa-whatsapp" title="whatsapp"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/jskamazigh-jskiste-3a5a3737b" target="_blank" class="btn btn-primary btn-square border border-white me-3">
+  <i class="fa-brands fa-linkedin-in" title="linkedin" ></i>
+</a>
+
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+ <!-- Navbar & Hero Start -->
+<div class="container-fluid sticky-top px-0">
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
+    <a href="index.html" class="navbar-brand p-0">
+      <img id="logos" src="/img/logo-gsa-modified.svg" alt="Logo" style="width:5em;">
+    </a>
+
+    <!-- Toggler moderne -->
+    <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        <li class="nav-item"><a href="a_propos.html" class="nav-link">À Propos</a></li>
+
+    <!-- Dropdown Services -->
+<li class="nav-item dropdown">
+  <!-- Version mobile : bouton + / - -->
+  <div class="d-flex align-items-center justify-content-between d-lg-none">
+    <a href="index.html#services" class="nav-link" data-scroll="#services">Services</a>
+    <button class="btn btn-sm toggle-btn">+</button>
+  </div>
+
+  <!-- Version desktop : dropdown classique -->
+  <a href="index.html#services" class="nav-link d-none d-lg-block dropdown-toggle" data-bs-toggle="dropdown" data-scroll="#services">Services</a>
+
+  <!-- Dropdown menu -->
+ <ul class="dropdown-menu bg-light">
+  <li><a href="s_automatisme.html" class="dropdown-item fw-semibold text-dark py-2 px-3">Automatisme & Contrôle-Commande</a></li>
+  <li><hr class="dropdown-divider"></li>
+
+  <li><a href="s_installation.html" class="dropdown-item fw-semibold text-dark py-2 px-3">Installation & Mise en service</a></li>
+  <li><hr class="dropdown-divider"></li>
+
+  <li><a href="s_ingenerie.html" class="dropdown-item fw-semibold text-dark py-2 px-3">Ingénierie et études techniques</a></li>
+  <li><hr class="dropdown-divider"></li>
+
+  <li><a href="s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3">Maintenance & Dépannage</a></li>
+  <li><hr class="dropdown-divider"></li>
+
+  <li><a href="s_process.html" class="dropdown-item fw-semibold text-dark py-2 px-3">Fabrication et Installation d’ensembles Process</a></li>
+  <li><hr class="dropdown-divider"></li>
+
+  <li><a href="s_GTC.html" class="dropdown-item fw-semibold text-dark py-2 px-3">Gestion technique des bâtiments(GTB/GTC)</a></li>
+</ul>
+</li>
+
+        <li class="nav-item"><a href="index.html#secteurs" class="nav-link">Nos secteurs</a></li>
+        <li class="nav-item"><a href="projets.html" class="nav-link">Nos Projets</a></li>
+
+        <!-- Langue -->
+        <li class="nav-item dropdown">
+          <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            <i class="fas fa-globe me-1"></i> Langue
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end bg-light">
+            <li><a href="/pages/fr/projets_mourmelon.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> Français</a></li>
+            <li><a href="/pages/en/projets_mourmelon.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> Anglais</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="contact.html" class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0">Contactez-Nous</a>
+        </li>
+      </ul>
+
+<!-- Icônes sociales (mobile uniquement) -->
+<div class="mobile-social d-lg-none">
+  <a href="https://api.whatsapp.com/send?phone=213655661704" target="_blank" class="text-success me-3">
+    <i class="fab fa-whatsapp fa-lg"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/gsa-automation/" target="_blank" class="text-primary me-3">
+    <i class="fab fa-linkedin fa-lg"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1WLmhY6vk9/" target="_blank" class="text-primary">
+    <i class="fab fa-facebook fa-lg"></i>
+  </a>
+</div>
+    </div>
+  </nav>
+</div>
+<!-- 🔹 Overlay ajouté ici -->
+<div class="nav-overlay" id="navOverlay"></div>
+<style>
+@media (max-width: 991.98px) {
+  .navbar .btn.btn-secondary {
+    margin-top: 15px;  /* 🔽 espace ajouté en haut */
+    display: block;
+       /* bouton pleine largeur si tu veux */
+  }
+}
+
+  </style>
+</body>
+    <!--<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+            const currentUrl = window.location.href;
+
+            navLinks.forEach(link => {
+                // Mark as active if href matches current full URL
+                if (link.href === currentUrl) {
+                    link.classList.add("active");
+                }
+
+                // Handle click events
+                link.addEventListener("click", function () {
+                    navLinks.forEach(nav => nav.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>-->
+
+    <!-- Navbar & Hero End -->
+ <!-- ====== Video Section ====== -->
+<!-- ====== Video Section ====== -->
+<div class="video-section">
+  <video autoplay muted loop playsinline>
+    <source src="/videos/videobackground.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Title overlay -->
+  <div class="video-title">
+    <h4>NOS Projets</h4>
+    <h2>Remplacement de l’ancienne chaufferie charbon/fioul par biomasse/GNL </h2>
+  </div>
+</div>
+
+<style>
+/* ===== Base container ===== */
+.video-section {
+  position: relative;
+  width: 100%;
+  min-height: 300px; /* fallback min-height */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* left align text */
+  padding: 60px 5%;
+  overflow: hidden;
+}
+
+/* ===== Background video ===== */
+.video-section video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keep aspect ratio, cover area */
+  z-index: 0;
+}
+
+/* ===== Text overlay ===== */
+.video-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 800px;
+}
+
+.video-title h4 {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 22px); /* responsive font */
+  font-weight: 800;
+   color: #fff;
+}
+
+.video-title h2 {
+  margin: 10px 0 0;
+  font-size: clamp(24px, 4vw, 42px); /* responsive font */
+  font-weight: 900;
+  color: #FF5E15;
+}
+
+/* ===== Tablet adjustments ===== */
+@media (max-width: 1200px) {
+    body {
+    padding-top: 70px;
+  }
+  html {
+    scroll-padding-top: 70px;
+  }
+  .video-section {
+    padding: 50px 5%;
+    justify-content: center; /* center text on tablets */
+    text-align: center;
+  }
+
+  .video-title h2 {
+    font-size: clamp(22px, 5vw, 34px);
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+@media (max-width: 576px) {
+  .video-section {
+    padding: 40px 10px;
+    min-height: 220px;
+  }
+
+  .video-title h4 {
+    font-size: 14px;
+  }
+
+  .video-title h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+</style>
+<!-- Breadcrumb Start -->
+<nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="index.html" class="breadcrumb-link">Accueil</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="projets.html" class="breadcrumb-link">Nos Projets</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Remplacement de l’ancienne chaufferie charbon/fioul par biomasse/GNL</li>
+    </ol>
+  </div>
+</nav>
+<!-- Breadcrumb End -->
+
+<style>
+/* Supprime le double slash Bootstrap et garde un seul */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: #6c757d;
+}
+
+/* Style des liens du breadcrumb */
+.breadcrumb-link {
+  color: #007bff; /* bleu GSA Automation */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Effet hover : changement de couleur + soulignement animé */
+.breadcrumb-link:hover {
+  color:#001659 ; /* bleu plus foncé */
+  text-decoration: underline;
+  text-underline-offset: 4px; /* espace entre le texte et le soulignement */
+}
+
+/* Dernier élément actif (page courante) */
+.breadcrumb-item.active {
+  color: #212529;
+  font-weight: 600;
+}
+</style>
+
+<!-- Projet Détail Start -->
+<section class="project-detail py-5 bg-light">
+  <div class="container py-5">
+
+    <!-- En-tête du projet -->
+    <div class="text-center mb-5">
+      <img class="icon-title mb-3" src="https://www.segitec.net/wp-content/uploads/2021/12/CEAFEE9B-AA3E-4BF7-A6E6-16A681A26B11.png" alt="ENGIE Mourmelon" style="max-width:80px;">
+      <h1 class="display-5 fw-bold mb-3">Projet clé en main – Remplacement de la chaufferie charbon/fioul par une solution mixte biomasse et GNL</h1>
+      <p class="text-secondary fs-5 mb-0">
+        Client : <strong>Leader mondial de l’énergie</strong> | Année : <strong>2023</strong> | Secteur : <strong>Énergie & Chauffage industriel</strong>
+      </p>
+      <p class="text-muted">Lieu : <strong>Grand Est, France</strong></p>
+    </div>
+
+    <!-- Description du projet -->
+    <div class="project-description mb-5">
+      <h4 class="text-secondary mb-3">Description du projet</h4>
+      <p>
+        Le projet s’inscrit dans le cadre du <strong>Contrat de Performance Énergétique (CPE)</strong> en France. 
+        Il vise à remplacer l’ancienne chaufferie charbon/fioul par une installation mixte <strong>biomasse / GNL</strong>, 
+        s’inscrivant dans une démarche globale de <strong>décarbonation</strong> et d’<strong>efficacité énergétique</strong>.
+      </p>
+    </div>
+
+    <!-- Séparateur visuel -->
+    <div class="section-divider mb-4"></div>
+
+    <!-- Phases du projet -->
+    <div class="project-phases mb-5">
+      <h4 class="text-secondary mb-3">Phases du projet</h4>
+      <ul class="list-unstyled">
+        <li>✅ Étude et analyse détaillée du cahier des charges</li>
+        <li>✅ Préparation, validation et fourniture des documents techniques d’entrée (plans 3D, schémas électriques et pneumatiques, P&ID, etc.)</li>
+        <li>✅ Suivi de la conception et de la fabrication des matériels et équipements cryogéniques par notre fournisseur basé en Turquie (réservoir GNL 30 m³, skids, vaporiseurs, odoriseurs…)</li>
+        <li>✅ Conception et intégration du système d’automatisme pour la gestion complète de la chaufferie (chaudières, cuve GNL, vaporiseurs, sécurité…)</li>
+        <li>✅ Développement du système de supervision <strong>SCADA</strong> pour la visualisation, le suivi énergétique et la gestion des alarmes</li>
+        <li>✅ Mise en place d’un système de <strong>télémétrie</strong> pour le contrôle et la gestion à distance</li>
+        <li>✅ Validation des travaux de génie civil sur site selon le plan fourni par GSA Automation</li>
+        <li>✅ Réalisation des <strong>tests FAT (Factory Acceptance Test)</strong> en atelier</li>
+        <li>✅ Gestion complète du transport des matériels depuis le fabricant jusqu’au client final</li>
+        <li>✅ Suivi douanier, réception et déchargement des matériels sur site</li>
+        <li>✅ Préparation et coordination du démarrage des travaux d’installation</li>
+        <li>✅ Installation complète des équipements et de la tuyauterie</li>
+        <li>✅ Installation électrique : raccordements, alimentation TGBT, instrumentation et automatisme</li>
+        <li>✅ Réalisation des <strong>tests SAT (Site Acceptance Test)</strong> sur site</li>
+        <li>✅ Réglages, calibrages et ajustements finaux</li>
+        <li>✅ Formation du personnel d’exploitation</li>
+        <li>✅ Réception finale du projet et fourniture des livrables</li>
+        <li>✅ Assistance technique et maintenance de l’installation dans le cadre du contrat client</li>
+      </ul>
+    </div>
+
+    <!-- Carousel 16 photos -->
+    <div class="carousel-section mb-5">
+      <div id="carouselMourmelon" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Photo 1 -->
+          <div class="carousel-item active">
+            <img src="/img/mourmelon.jpg" class="d-block w-100 carousel-img" alt="Photo 1">
+          </div>
+          <!-- Photos 2 à 16 -->
+          <div class="carousel-item"><img src="/img_projets/m3D.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/m3D_1.png" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/m3D_2.jpeg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/meng.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/mreservoir.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/mreservoir1.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/m17.jpeg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/m18.jpeg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/marmoire.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/minstrument.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="/img_projets/m12.JPG" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+           </div>
+
+        <!-- Boutons flèches -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMourmelon" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMourmelon" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bouton retour -->
+    <div class="text-center mt-5">
+      <a href="projets.html" class="btn btn-outline-primary px-5 py-3 rounded-pill">
+        <i class="fas fa-arrow-left me-2"></i> Retour aux projets
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+.project-detail h1, .project-detail h4 {
+  font-family: "Poppins", sans-serif;
+}
+.project-detail ul li {
+  padding: 5px 0;
+}
+
+/* Séparateur visuel */
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background-color: orange;
+  margin: 0 auto 30px auto;
+  border-radius: 2px;
+}
+
+/* Carousel desktop */
+.carousel-section #carouselMourmelon {
+  max-width: 800px;
+  height: 400px;
+  margin: auto;
+}
+.carousel-section #carouselMourmelon .carousel-inner,
+.carousel-section #carouselMourmelon .carousel-item {
+  height: 100%;
+}
+.carousel-section #carouselMourmelon .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: none !important;
+}
+/* Supprimer overlay sombre */
+.carousel-section #carouselMourmelon .carousel-item::after {
+  content: none !important;
+  background: none !important;
+}
+/* Boutons flèches */
+.carousel-section #carouselMourmelon .carousel-control-prev,
+.carousel-section #carouselMourmelon .carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+}
+.carousel-section #carouselMourmelon .carousel-control-prev-icon,
+.carousel-section #carouselMourmelon .carousel-control-next-icon {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+/* Responsive mobile */
+@media (max-width: 992px) {
+  .carousel-section #carouselMourmelon {
+    height: 270px;
+    max-width: 100%;
+  }
+  .carousel-section #carouselMourmelon .carousel-inner,
+  .carousel-section #carouselMourmelon .carousel-item,
+  .carousel-section #carouselMourmelon .carousel-img {
+    height: 270px;
+  }
+  .carousel-section #carouselMourmelon .carousel-control-prev,
+  .carousel-section #carouselMourmelon .carousel-control-next {
+    width: 10%;
+  }
+  .carousel-section #carouselMourmelon .carousel-control-prev-icon,
+  .carousel-section #carouselMourmelon .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255,165,0,0.9);
+  }
+}
+</style>
+
+
+
+ <!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Logo + Texte -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column align-items-start">
+                    <img src="/img/colorkit (2).svg" alt="Logo" class="mb-3" style="max-width: 180px;">
+                    <p class="mb-0 text-white">
+                        Entreprise D’engineering Et de Réalisation des Solutions Électriques Et Automatisme
+                    </p>
+                </div>
+            </div>
+
+            <!-- Explorer -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Explorer</h4>
+                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Accueil</a>
+                    <a href="a_propos.html"><i class="fas fa-angle-right me-2"></i> À Propos</a>
+                    <a href="index.html#services"><i class="fas fa-angle-right me-2"></i> Services</a>
+                    <a href="index.html#projects"><i class="fas fa-angle-right me-2"></i> Nos Secteurs</a>
+                    <a href="projets.html"><i class="fas fa-angle-right me-2"></i>Nos Projets</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contactez-Nous</a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Nos Services</h4>
+                    <a href="s_automatisme.html"><i class="fas fa-angle-right me-2"></i>Automatisme & Contrôle commande</a>
+                    <a href="s_installation.html"><i class="fas fa-angle-right me-2"></i> Installation  & Mise en service</a>
+                    <a href="s_ingenerie.html"><i class="fas fa-angle-right me-2"></i> Ingénierie et études techniques</a>
+                    <a href="s_maintenance_depannage.html"><i class="fas fa-angle-right me-2"></i> Maintenance et  dépannage</a>
+                    <a href="s_process.html"><i class="fas fa-angle-right me-2"></i>Fabrication et Installation d’ensembles Process</a>
+                    <a href="s_GTC.html"><i class="fas fa-angle-right me-2"></i>Gestion technique de bâtiment(GTB/GTC)</a>
+                 </div>
+            </div>
+
+            <!-- Coordonnées -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                  <h4 class="text-white mb-4">Contact</h4>
+
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsaautomationcompany@gmail.com"
+             target="_blank"
+             class="d-inline-flex align-items-center me-4 text-decoration-none">
+            <i class="fas fa-envelope me-2"></i> gsaautomationcompany@gmail.com
+          </a>
+          <a href="https://wa.me/213655661704"
+   target="_blank"
+   class="d-inline-flex align-items-center me-4 text-decoration-none">
+  <i class="fab fa-whatsapp me-2 "></i> Discuter sur WhatsApp
+</a>
+
+
+          <a href="tel:+33777578713"><i class="fas fa-phone me-2"></i> France : +33 7 77 57 87 13</a>
+          <a href="tel:+213655661704" class="mb-3"><i class="fas fa-phone me-2"></i> Algérie : +213 655 66 17 04</a>
+
+                   <div class="footer-item d-flex flex-column">
+  <h4 class="text-white mb-4">Nous suivre</h4>
+  
+  <div class="footer-btn d-flex align-items-center">
+    <a class="btn btn-secondary btn-md-square me-2"
+       href="https://www.facebook.com/share/1WLmhY6vk9/"
+       target="_blank">
+      <i class="fab fa-facebook-f text-white"></i>
+    </a>
+
+    <a class="btn btn-secondary btn-md-square me-0"
+       href="https://www.linkedin.com/company/gsa-automation/"
+       target="_blank">
+      <i class="fab fa-linkedin-in text-white"></i>
+    </a>
+  </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=213655661704"
+   target="_blank"
+   class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+   
+
+
+<!-- Font Awesome for the icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+<!-- Font Awesome for the icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <span class="text-body text-white">
+                    Copyright © GSA AUTOMATION - Tous les droits sont réservés.
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+   <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
