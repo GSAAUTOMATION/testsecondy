@@ -38,10 +38,13 @@ function updateLogo() {
         // EN HAUT DE LA PAGE
         $('.navbar').removeClass('scrolled');
 
-        if (isMobile) {
-            // MOBILE : toujours logo modifié
-            $('#logo, #logos').attr('src', '../../img/logo-gsa-modified.svg');
-        } else {
+   if (isMobile) {
+    // MOBILE : logo modifié + largeur 3em
+    $('#logo, #logos')
+        .attr('src', '../../img/logo-gsa-modified.svg')
+        .css('width', '3em');
+}
+ else {
             // DESKTOP : logo normal
             $('#logo, #logos').attr('src', '../../img/colorkit (2).svg');
         }
