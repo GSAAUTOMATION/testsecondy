@@ -26,15 +26,37 @@ $(window).scroll(function () {
 });
 
 // Navbar + Logo change au scroll
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+function updateLogo() {
+    let scrollTop = $(window).scrollTop();
+    let isMobile = window.innerWidth <= 992;
+
+    if (scrollTop > 50) {
+        // SCROLL ACTIVÉ
         $('.navbar').addClass('scrolled');
-        $('#logo').attr('src', '../../img/logo-gsa-modified.svg');
+        $('#logo, #logos').attr('src', '../../img/logo-gsa-modified.svg');
     } else {
+        // EN HAUT DE LA PAGE
         $('.navbar').removeClass('scrolled');
-        $('#logo').attr('src', '../../img/colorkit (2).svg');
+
+        if (isMobile) {
+            // MOBILE : toujours logo modifié
+            $('#logo, #logos').attr('src', '../../img/logo-gsa-modified.svg');
+        } else {
+            // DESKTOP : logo normal
+            $('#logo, #logos').attr('src', '../../img/colorkit (2).svg');
+        }
     }
-});
+}
+
+// Mise à jour au scroll
+$(window).on('scroll', updateLogo);
+
+// Mise à jour au resize (nécessaire pour mobile/desktop)
+$(window).on('resize', updateLogo);
+
+// Mise à jour au chargement initial
+$(document).ready(updateLogo);
+
 // ✅ Correction du retard → on force l’état correct dès le load
 $(window).trigger('scroll');  
 
