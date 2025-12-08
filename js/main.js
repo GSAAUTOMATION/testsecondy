@@ -49,7 +49,7 @@ function updateLogo() {
             // DESKTOP : logo normal
             $('#logo, #logos')
                 .attr('src', '../../img/colorkit (2).svg')
-                .css('width', '');
+                .css('width', '5em');
         }
     }
 }
