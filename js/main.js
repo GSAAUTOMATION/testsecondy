@@ -29,10 +29,10 @@ $(window).scroll(function () {
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
         $('.navbar').addClass('scrolled');
-        $('#logo').attr('src', '/img/logo-gsa-modified.svg');
+        $('#logo').attr('src', 'img/logo-gsa-modified.svg');
     } else {
         $('.navbar').removeClass('scrolled');
-        $('#logo').attr('src', '/img/colorkit (2).svg');
+        $('#logo').attr('src', 'img/colorkit (2).svg');
     }
 });
 // ✅ Correction du retard → on force l’état correct dès le load
