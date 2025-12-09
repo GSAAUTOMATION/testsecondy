@@ -607,7 +607,7 @@ html, body {
 /* ===== Mobile : carousel normal ===== */
 @media (max-width: 991.98px) {
   .carousel {
-    margin-top: 70px !important; /* pour compenser la navbar fixe */
+    margin-top: 5px !important; /* pour compenser la navbar fixe */
   }
 }
 
