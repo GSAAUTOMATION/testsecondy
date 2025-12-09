@@ -28,57 +28,49 @@ $(window).scroll(function () {
 // Navbar + Logo change au scroll
 function updateLogo() {
     let scrollTop = $(window).scrollTop();
-    let isHome = document.body.id === "home"; // ← détecte homepage
+    let isHome = document.body.classList.contains("homepage"); 
     let isSmallScreen = window.innerWidth <= 992;
+    let isVerySmall = window.innerWidth <= 500;
 
-    /* ------------------------------
-       LOGO PRINCIPAL (#logo)
-       ------------------------------ */
+    /* ---------------------------------------
+       CHOIX DU LOGO SELON PAGE + ÉCRAN
+       --------------------------------------- */
 
-    let logoWidth = '5em';
-    let logoSrc;
+    // Si homepage + petit écran → utiliser #logos
+    let useLogos = isHome && isSmallScreen;
 
-    if (window.innerWidth <= 500) {
-        logoWidth = '3em';
-        logoSrc = '../../img/logo-gsa-modified.svg';
+    let $target = useLogos ? $('#logos') : $('#logo');
+    let $hidden = useLogos ? $('#logo') : $('#logos');
 
-    } else if (window.innerWidth <= 992) {
-        logoWidth = '5em';
-        logoSrc = '../../img/logo-gsa-modified.svg';
+    $hidden.hide();   // cacher celui qu’on n’utilise pas
+    $target.show();   // afficher le bon
 
+
+    /* ---------------------------------------
+       PARAMÈTRES COMMUNS
+       --------------------------------------- */
+
+    let src, width;
+
+    if (isVerySmall) {
+        width = '3em';
+        src = '../../img/logo-gsa-modified.svg';
+    } else if (isSmallScreen) {
+        width = '5em';
+        src = '../../img/logo-gsa-modified.svg';
     } else {
-        logoWidth = '5em';
-        logoSrc = scrollTop > 50
+        width = '5em';
+        src = scrollTop > 50
             ? '../../img/logo-gsa-modified.svg'
             : '../../img/colorkit (2).svg';
     }
 
-    /* Si homepage ET petit écran → cacher #logo */
-    if (isHome && isSmallScreen) {
-        $('#logo').hide();
-    } else {
-        $('#logo').show().attr('src', logoSrc).css('width', logoWidth);
-    }
+    $target.attr('src', src).css('width', width);
 
 
-    /* ------------------------------
-       LOGO SECONDAIRE (#logos)
-       ------------------------------ */
-
-    let logosWidth = window.innerWidth <= 500 ? '3em' : '5em';
-    let logosSrc = '../../img/logo-gsa-modified.svg';
-
-    /* Si homepage ET ≤ 992px → afficher #logos */
-    if (isHome && isSmallScreen) {
-        $('#logos').show().attr('src', logosSrc).css('width', logosWidth);
-    } else {
-        $('#logos').hide();
-    }
-
-
-    /* ------------------------------
-       NAVBAR SCROLL CLASS
-       ------------------------------ */
+    /* ---------------------------------------
+       NAVBAR CHANGEMENT AU SCROLL
+       --------------------------------------- */
 
     if (scrollTop > 50) {
         $('.navbar').addClass('scrolled');
