@@ -28,55 +28,47 @@ $(window).scroll(function () {
 // Navbar + Logo change au scroll
 function updateLogo() {
     let scrollTop = $(window).scrollTop();
-    let isHome = document.body.classList.contains("homepage"); 
-    let isSmallScreen = window.innerWidth <= 992;
-    let isVerySmall = window.innerWidth <= 500;
+    let isHome = document.body.classList.contains("homepage");
+    let w = window.innerWidth;
 
-    /* ---------------------------------------
-       CHOIX DU LOGO SELON PAGE + ÉCRAN
-       --------------------------------------- */
+    /* ---- Décider quel logo montrer ---- */
+    let useLogos = (isHome && w <= 992);   // homepage + petit écran
+    let $show = useLogos ? $('#logos') : $('#logo');
+    let $hide = useLogos ? $('#logo') : $('#logos');
 
-    // Si homepage + petit écran → utiliser #logos
-    let useLogos = isHome && isSmallScreen;
+    $hide.hide();
+    $show.show();
 
-    let $target = useLogos ? $('#logos') : $('#logo');
-    let $hidden = useLogos ? $('#logo') : $('#logos');
+    /* ---- Taille selon largeur ---- */
+    let width;
+    if (w <= 500) width = '3em';
+    else width = '5em';
 
-    $hidden.hide();   // cacher celui qu’on n’utilise pas
-    $target.show();   // afficher le bon
+    /* ---- Source selon contexte ---- */
+    let src;
 
-
-    /* ---------------------------------------
-       PARAMÈTRES COMMUNS
-       --------------------------------------- */
-
-    let src, width;
-
-    if (isVerySmall) {
-        width = '3em';
+    if (useLogos) {
+        // Homepage + ≤992px => logos modifié toujours
         src = '../../img/logo-gsa-modified.svg';
-    } else if (isSmallScreen) {
-        width = '5em';
-        src = '../../img/logo-gsa-modified.svg';
+
     } else {
-        width = '5em';
-        src = scrollTop > 50
-            ? '../../img/logo-gsa-modified.svg'
-            : '../../img/colorkit (2).svg';
+        // Cas où #logo est utilisé :
+        if (w > 992) {
+            // Desktop : change avec scroll
+            src = scrollTop > 50
+                ? '../../img/logo-gsa-modified.svg'
+                : '../../img/colorkit (2).svg';
+        } else {
+            // Autres pages, mobile/tablette
+            src = '../../img/logo-gsa-modified.svg';
+        }
     }
 
-    $target.attr('src', src).css('width', width);
+    $show.attr('src', src).css('width', width);
 
-
-    /* ---------------------------------------
-       NAVBAR CHANGEMENT AU SCROLL
-       --------------------------------------- */
-
-    if (scrollTop > 50) {
-        $('.navbar').addClass('scrolled');
-    } else {
-        $('.navbar').removeClass('scrolled');
-    }
+    /* ---- Navbar scroll ---- */
+    if (scrollTop > 50) $('.navbar').addClass('scrolled');
+    else $('.navbar').removeClass('scrolled');
 }
 
 $(window).on('scroll resize', updateLogo);
