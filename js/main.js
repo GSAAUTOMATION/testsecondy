@@ -28,25 +28,51 @@ $(window).scroll(function () {
 // Navbar + Logo change au scroll
 function updateLogo() {
     let scrollTop = $(window).scrollTop();
-    let width, src;
 
-    // Determine logo src & width based on device width
+    /* ------------------------------
+       RÈGLES POUR LE LOGO PRINCIPAL (#logo)
+       ------------------------------ */
+    let logoWidth, logoSrc;
+
     if (window.innerWidth <= 500) {
-        width = '3em';
-        src = '../../img/logo-gsa-modified.svg';
+        logoWidth = '3em';
+        logoSrc = '../../img/logo-gsa-modified.svg';
+
     } else if (window.innerWidth <= 992) {
-        width = '5em';
-        src = '../../img/logo-gsa-modified.svg';
+        logoWidth = '5em';
+        logoSrc = '../../img/logo-gsa-modified.svg';
+
     } else {
-        width = '5em';
-        src = scrollTop > 50 
-              ? '../../img/logo-gsa-modified.svg'
-              : '../../img/colorkit (2).svg';
+        logoWidth = '5em';
+        logoSrc = scrollTop > 50
+            ? '../../img/logo-gsa-modified.svg'
+            : '../../img/colorkit (2).svg';
     }
 
-    $('#logo, #logos').attr('src', src).css('width', width);
+    $('#logo').attr('src', logoSrc).css('width', logoWidth);
 
-    // Scroll class always applied
+
+    /* ------------------------------
+       RÈGLES SPÉCIALES POUR #logos
+       ------------------------------ */
+    let logosWidth, logosSrc;
+
+    if (window.innerWidth <= 500) {
+        // ≤ 500px
+        logosWidth = '3em';
+        logosSrc = '../../img/logo-gsa-modified.svg';
+    } else {
+        // ≥ 501px (TOP + SCROLL = même règle)
+        logosWidth = '5em';
+        logosSrc = '../../img/logo-gsa-modified.svg';
+    }
+
+    $('#logos').attr('src', logosSrc).css('width', logosWidth);
+
+
+    /* ------------------------------
+       NAVBAR SCROLL CLASS (toutes tailles)
+       ------------------------------ */
     if (scrollTop > 50) {
         $('.navbar').addClass('scrolled');
     } else {
@@ -54,10 +80,8 @@ function updateLogo() {
     }
 }
 
-// Update on scroll and resize
 $(window).on('scroll resize', updateLogo);
 $(document).ready(updateLogo);
-
 
 
 
