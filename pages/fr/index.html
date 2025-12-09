@@ -364,43 +364,23 @@
   </button>
 
 </div>
-<style>
-/* Pour tous les écrans ≤ 992px */
+     <style>
 @media (max-width: 992px) {
-
-  /* Hauteur fixe pour toutes les slides */
-  .carousel-item {
-    height: 420px; /* tu peux ajuster 350–450px selon ton design */
-    position: relative;
+  .carousel,
+  .carousel-item,
+  .carousel-item img {
+    height: 100svh !important;
   }
 
-  /* Images : remplissent sans déformer */
   .carousel-item img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
   }
 
-  /* Ajustement du caption pour centrer le texte */
-  .carousel-caption {
-    bottom: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 20px;
-  }
-
-  /* Réduire un peu la taille du titre sur petits écrans */
-  .carousel-caption h1 {
-    font-size: 2rem !important;
-    line-height: 2.3rem;
-  }
-
-  .carousel-caption p {
-    font-size: 1rem !important;
+  .carousel {
+    margin-top: 70px !important;
   }
 }
-
- </style>   
+</style>
 
    <!--  About Start-->
     <div id="about-us" 
