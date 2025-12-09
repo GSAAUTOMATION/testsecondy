@@ -28,11 +28,15 @@ $(window).scroll(function () {
 // Navbar + Logo change au scroll
 function updateLogo() {
     let scrollTop = $(window).scrollTop();
+    let isHome = document.body.id === "home"; // ← détecte homepage
+    let isSmallScreen = window.innerWidth <= 992;
 
     /* ------------------------------
-       RÈGLES POUR LE LOGO PRINCIPAL (#logo)
+       LOGO PRINCIPAL (#logo)
        ------------------------------ */
-    let logoWidth, logoSrc;
+
+    let logoWidth = '5em';
+    let logoSrc;
 
     if (window.innerWidth <= 500) {
         logoWidth = '3em';
@@ -49,30 +53,33 @@ function updateLogo() {
             : '../../img/colorkit (2).svg';
     }
 
-    $('#logo').attr('src', logoSrc).css('width', logoWidth);
-
-
-    /* ------------------------------
-       RÈGLES SPÉCIALES POUR #logos
-       ------------------------------ */
-    let logosWidth, logosSrc;
-
-    if (window.innerWidth <= 500) {
-        // ≤ 500px
-        logosWidth = '3em';
-        logosSrc = '../../img/logo-gsa-modified.svg';
+    /* Si homepage ET petit écran → cacher #logo */
+    if (isHome && isSmallScreen) {
+        $('#logo').hide();
     } else {
-        // ≥ 501px (TOP + SCROLL = même règle)
-        logosWidth = '5em';
-        logosSrc = '../../img/logo-gsa-modified.svg';
+        $('#logo').show().attr('src', logoSrc).css('width', logoWidth);
     }
 
-    $('#logos').attr('src', logosSrc).css('width', logosWidth);
+
+    /* ------------------------------
+       LOGO SECONDAIRE (#logos)
+       ------------------------------ */
+
+    let logosWidth = window.innerWidth <= 500 ? '3em' : '5em';
+    let logosSrc = '../../img/logo-gsa-modified.svg';
+
+    /* Si homepage ET ≤ 992px → afficher #logos */
+    if (isHome && isSmallScreen) {
+        $('#logos').show().attr('src', logosSrc).css('width', logosWidth);
+    } else {
+        $('#logos').hide();
+    }
 
 
     /* ------------------------------
-       NAVBAR SCROLL CLASS (toutes tailles)
+       NAVBAR SCROLL CLASS
        ------------------------------ */
+
     if (scrollTop > 50) {
         $('.navbar').addClass('scrolled');
     } else {
