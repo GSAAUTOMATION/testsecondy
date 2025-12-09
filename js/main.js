@@ -30,25 +30,23 @@ function updateLogo() {
     let scrollTop = $(window).scrollTop();
     let width, src;
 
+    // Determine logo src & width based on device width
     if (window.innerWidth <= 500) {
-        // Mobile petit
         width = '3em';
         src = '../../img/logo-gsa-modified.svg';
     } else if (window.innerWidth <= 992) {
-        // Mobile/tablette moyen
         width = '5em';
         src = '../../img/logo-gsa-modified.svg';
     } else {
-        // Grand desktop
         width = '5em';
         src = scrollTop > 50 
-              ? '../../img/logo-gsa-modified.svg' // scroll → modifié
-              : '../../img/colorkit (2).svg';    // haut → normal
+              ? '../../img/logo-gsa-modified.svg'
+              : '../../img/colorkit (2).svg';
     }
 
     $('#logo, #logos').attr('src', src).css('width', width);
 
-    // Navbar scroll class (pour grand desktop)
+    // Scroll class always applied
     if (scrollTop > 50) {
         $('.navbar').addClass('scrolled');
     } else {
@@ -56,9 +54,10 @@ function updateLogo() {
     }
 }
 
-// Mise à jour au scroll et resize
+// Update on scroll and resize
 $(window).on('scroll resize', updateLogo);
 $(document).ready(updateLogo);
+
 
 
 
