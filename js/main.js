@@ -26,15 +26,65 @@ $(window).scroll(function () {
 });
 
 // Navbar + Logo change au scroll
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+function updateLogo() {
+    let scrollTop = $(window).scrollTop();
+
+    /* ------------------------------
+       RÈGLES POUR LE LOGO PRINCIPAL (#logo)
+       ------------------------------ */
+    let logoWidth, logoSrc;
+
+    if (window.innerWidth <= 500) {
+        logoWidth = '3em';
+        logoSrc = '../../img/logo-gsa-modified.svg';
+
+    } else if (window.innerWidth <= 992) {
+        logoWidth = '5em';
+        logoSrc = '../../img/logo-gsa-modified.svg';
+
+    } else {
+        logoWidth = '5em';
+        logoSrc = scrollTop > 50
+            ? '../../img/logo-gsa-modified.svg'
+            : '../../img/colorkit (2).svg';
+    }
+
+    $('#logo').attr('src', logoSrc).css('width', logoWidth);
+
+
+    /* ------------------------------
+       RÈGLES SPÉCIALES POUR #logos
+       ------------------------------ */
+    let logosWidth, logosSrc;
+
+    if (window.innerWidth <= 500) {
+        // ≤ 500px
+        logosWidth = '3em';
+        logosSrc = '../../img/logo-gsa-modified.svg';
+    } else {
+        // ≥ 501px (TOP + SCROLL = même règle)
+        logosWidth = '5em';
+        logosSrc = '../../img/logo-gsa-modified.svg';
+    }
+
+    $('#logos').attr('src', logosSrc).css('width', logosWidth);
+
+
+    /* ------------------------------
+       NAVBAR SCROLL CLASS (toutes tailles)
+       ------------------------------ */
+    if (scrollTop > 50) {
         $('.navbar').addClass('scrolled');
-        $('#logo').attr('src', '/img/logo-gsa-modified.svg');
     } else {
         $('.navbar').removeClass('scrolled');
-        $('#logo').attr('src', '/img/colorkit (2).svg');
     }
-});
+}
+
+$(window).on('scroll resize', updateLogo);
+$(document).ready(updateLogo);
+
+
+
 // ✅ Correction du retard → on force l’état correct dès le load
 $(window).trigger('scroll');  
 

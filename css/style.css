@@ -326,11 +326,7 @@ html, body {
 
 /* ===== Mobile : navbar et menu solides ===== */
 @media (max-width: 992px) {
-  #logo, #logos {
-    content: url('/img/logo-gsa-modified.svg');
-    width: 3em !important;
-  }
-
+ 
   .navbar {
     position: fixed;
     top: 0;
@@ -339,6 +335,11 @@ html, body {
     z-index: 1002;
     background: whitesmoke !important;
     box-shadow: 0 0 4px rgba(0,0,0,0.1) !important;
+  }
+  .homepage .navbar {
+  position: fixed;
+  background: whitesmoke !important;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.6) !important; /* ظل للأسفل فقط */
   }
 
   .homepage .navbar .nav-link {
@@ -606,7 +607,7 @@ html, body {
 /* ===== Mobile : carousel normal ===== */
 @media (max-width: 991.98px) {
   .carousel {
-    margin-top: 70px !important; /* pour compenser la navbar fixe */
+    margin-top: -35px !important; /* pour compenser la navbar fixe */
   }
 }
 
