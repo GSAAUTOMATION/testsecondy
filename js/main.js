@@ -300,5 +300,18 @@ document.addEventListener("scroll", () => {
         if (btn) btn.textContent = '+';
     });
 });
+// ===== PROTECTION DES IMAGES SUR TOUT LE SITE =====
+$('img').each(function() {
+    $(this).attr('draggable', 'false'); // Empêche drag & drop
+    $(this).on('dragstart', function(e){ e.preventDefault(); });
+    $(this).on('contextmenu', function(e){ e.preventDefault(); }); // Bloque clic droit
+});
+// ===== PROTECTION DES VIDEOS SUR TOUT LE SITE =====
+$('video').each(function() {
+    $(this).attr('draggable', 'false'); // Empêche drag & drop
+    $(this).on('dragstart', function(e){ e.preventDefault(); });
+    $(this).on('contextmenu', function(e){ e.preventDefault(); }); // Bloque clic droit
+});
+
 
 })(jQuery);

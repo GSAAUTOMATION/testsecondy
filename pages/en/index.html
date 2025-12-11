@@ -99,7 +99,7 @@
     <!-- Menu -->
       <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-        <li class="nav-item"><a href="index.html" class="nav-link" data-scroll="#carouselId">Home</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link" data-scroll="#accueil">Home</a></li>
         <li class="nav-item">
   <a href="a_propos.html" class="nav-link" data-scroll="#about-us">About us</a>
 </li>
@@ -225,8 +225,13 @@
 
    <!-- ✅ CSS à mettre dans style.css -->
 <!-- Carousel Start -->
-<div class="container-fluid overflow-hidden px-0">
-  <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000" data-bs-wrap="true">
+ <div id="accueil" 
+ class="container-fluid overflow-hidden px-0">
+  <div id="carouselId" 
+       class="carousel slide" 
+       data-bs-ride="carousel" 
+       data-bs-interval="7000" 
+       data-bs-wrap="true">
     <!-- Indicators -->
     <ol class="carousel-indicators fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;">
       <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
@@ -1637,6 +1642,288 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
+
+<!-- Brochure -->
+<!-- Brochure Widget -->
+<div class="brochure-widget">
+  <div class="brochure-btn" aria-label="Open brochure download panel">
+    <i class="fas fa-file-pdf"></i>
+  </div>
+
+  <div class="brochure-panel">
+    <h4 class="title">Download Our Brochure</h4>
+
+    <div class="brochure-slider">
+      <div class="fade-slide active">
+        <img src="../../img/Brochure.jpg" alt="French Brochure" draggable="false" loading="lazy">
+      </div>
+      <div class="fade-slide">
+        <img src="../../img/Brochure_1.jpg" alt="English Brochure" draggable="false" loading="lazy">
+      </div>
+      <div class="fade-slide">
+        <img src="../../img/Brochure_2.jpg" alt="English Brochure" draggable="false" loading="lazy">
+      </div>
+    </div>
+
+    <div class="download-buttons">
+      <a href="../../docs/Brochure GSA Automation.pdf" class="download-btn">
+        <i class="fas fa-file-pdf me-2"></i> French Version
+      </a>
+      <a href="../../docs/Brochure GSA Automation.pdf" class="download-btn">
+        <i class="fas fa-file-pdf me-2"></i> English Version
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+ /* hide-brochure : fade + déplacement léger */
+/* ===== WIDGET GLOBAL ===== */
+.brochure-widget {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ===== BOUTON AVEC PULSE ===== */
+.brochure-btn {
+  background: linear-gradient(135deg, #ff6600, #ff8c2e);
+  background-size: 200% 200%;
+  color: #fff;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px 0 0 14px;
+  cursor: pointer;
+  font-size: 26px;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  transition: .3s ease;
+  animation: pulseGradient 3s infinite;
+}
+
+@keyframes pulseGradient {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+.brochure-btn:hover {
+  background: linear-gradient(135deg, #ff7a1a, #ffa44f);
+}
+
+/* ===== PANNEAU ===== */
+.brochure-panel {
+  background: #ffffff;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 14px 0 0 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+  transform: translateX(20px);
+  transition: width .45s ease, opacity .35s ease, padding .45s ease, transform .45s ease;
+}
+
+.brochure-widget:hover .brochure-panel {
+  width: 300px;
+  opacity: 1;
+  padding: 20px;
+  transform: translateX(0);
+}
+
+/* ===== TITRE ===== */
+.title {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ===== CAROUSEL FADE ===== */
+.brochure-slider {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.fade-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.fade-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* ===== BOUTONS PDF ===== */
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.download-btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 11px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.download-btn:hover {
+  background: #e05500;
+  transform: translateY(-2px);
+}
+/* Règle nécessaire pour que JS puisse cacher/montrer proprement */
+/* Animation moderne apparition widget */
+.brochure-widget {
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 1;
+  transform: translateY(-50%) translateX(0) scale(1);
+}
+
+/* Quand JS le masque */
+.hide-brochure {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(-50%) translateX(40px) scale(0.95) !important;
+}
+
+/* Quand JS l’affiche */
+.brochure-widget.visible {
+  opacity: 1 !important;
+  transform: translateY(-50%) translateX(0) scale(1) !important;
+}
+
+/* Masquer le widget sur écrans ≤992px */
+@media (max-width: 992px) {
+  .brochure-widget {
+    display: none !important;
+  }
+}
+</style>  
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const widget = document.querySelector(".brochure-widget");
+  const button = document.querySelector(".brochure-btn");
+  const slides = document.querySelectorAll(".fade-slide");
+  const accueil = document.querySelector("#accueil");
+
+  if (!widget) return; // rien à faire si pas présent
+
+  // ===== helper =====
+  const isDesktop = () => window.innerWidth > 992;
+
+  // ===== seuil dynamique (Méthode 1 adaptée) =====
+  function getThreshold() {
+    if (accueil) {
+      // 80% de la hauteur de la section d'accueil, min 200, max 600
+      const t = Math.round(accueil.offsetHeight * 0.8);
+      return Math.min(Math.max(t, 200), 600);
+    }
+    return 200; // fallback simple
+  }
+
+  // ===== ouverture panneau clic (desktop seulement) =====
+  if (button) {
+    button.addEventListener("click", () => {
+      if (isDesktop()) widget.classList.toggle("open");
+    });
+  }
+
+  // ===== carousel (desktop only) =====
+  let slideIndex = 0;
+  let slideTimer = null;
+  function stepSlide() {
+    if (!slides || slides.length === 0) return;
+    slides.forEach(s => s.classList.remove('active'));
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add('active');
+  }
+  function startCarousel() {
+    stopCarousel();
+    if (!isDesktop()) return;
+    stepSlide();
+    slideTimer = setInterval(stepSlide, 4000);
+  }
+  function stopCarousel() {
+    if (slideTimer) { clearInterval(slideTimer); slideTimer = null; }
+  }
+  // lancer au départ si desktop
+  if (isDesktop()) startCarousel();
+
+  window.addEventListener('resize', () => {
+    if (isDesktop()) {
+      if (!slideTimer) startCarousel();
+    } else {
+      stopCarousel();
+    }
+    updateVisibility(); // recalcul immédiat au resize
+  });
+
+  // ===== Methode 1 : masquage selon scrollY < threshold =====
+  function updateVisibility() {
+    const threshold = getThreshold();
+    // si mobile → forcé caché
+    if (!isDesktop()) {
+      widget.classList.add('hide-brochure');
+      return;
+    }
+    // si on est en haut (dans l'accueil) → cacher
+    if (window.scrollY < threshold) {
+      widget.classList.add('hide-brochure');
+    } else {
+      widget.classList.remove('hide-brochure');
+    }
+  }
+
+  // Événements
+  window.addEventListener('scroll', updateVisibility, { passive: true });
+  // appel initial (après un micro délai pour laisser le rendu se stabiliser)
+  setTimeout(updateVisibility, 50);
+
+  // Sécurité : forcer état correct aussi après load complet des ressources (images)
+  window.addEventListener('load', () => {
+    setTimeout(updateVisibility, 80);
+  });
+
+  // (OPTION) debug : décommente si tu veux voir le seuil et la position
+  // window.addEventListener('scroll', () => console.log('scrollY', window.scrollY, 'threshold', getThreshold()));
+
+});
+</script>
+
+
 <!-- Footer Start -->
 <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
     <div class="container py-5">
