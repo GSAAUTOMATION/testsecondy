@@ -364,7 +364,7 @@
       
       <!-- ===== MENU LATÉRAL STICKY ===== -->
       <!-- ===== CONTENU PRINCIPAL ===== -->
-      <div class="col-lg-9">
+      <div class="col-lg-9 ps-lg-5 pe-lg-5 ps-3 pe-3">
         <div class="content-wrapper">
 
           <section id="intro">
@@ -427,56 +427,51 @@
 
 <!-- ===== CSS ===== -->
 <!-- ================== DCS (intégrée à la page Automatisme) ================== -->
-<section id="DCS">
-  <div class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-    <div class="container">
-      <div class="row g-5 align-items-center">
+<section id="DCS" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
+  <div class="row align-items-center g-5">
 
-        <!-- TEXTE À GAUCHE -->
-        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-          <h1 class="display-6 mb-4">
-            <strong>Système de Contrôle Distribué (DCS)</strong>
-          </h1>
-
-          <p class="mb-3">
-            Nos ingénieurs développent et intègrent des <strong>systèmes DCS (Distributed Control System)</strong>
-            dédiés à l’automatisation et à la supervision de procédés industriels complexes.
-          </p>
-
-          <p class="mb-3">
-            Nous maîtrisons plusieurs plateformes majeures, notamment <strong>Emerson DeltaV</strong> et
-            <strong>Siemens PCS7</strong>, permettant une gestion optimale des procédés continus et batch, ainsi
-            qu’une parfaite intégration avec les automates <strong>PLC</strong> existants.
-          </p>
-
-          <h5 class="mt-4 mb-3">🔧 Nos prestations incluent :</h5>
-          <ul class="list-unstyled mb-4">
-            <li><i class="fas fa-check text-secondary me-2"></i> Conception et programmation de boucles PID et séquences automatiques</li>
-            <li><i class="fas fa-check text-secondary me-2"></i> Configuration des contrôleurs et interfaces opérateur (HMI / SCADA)</li>
-            <li><i class="fas fa-check text-secondary me-2"></i> Intégration DCS–PLC via Modbus, Profibus, Profinet, OPC...</li>
-            <li><i class="fas fa-check text-secondary me-2"></i> Tests, validation, mise en service et formation du personnel</li>
-            <li><i class="fas fa-check text-secondary me-2"></i> Migration et modernisation d’anciens systèmes de contrôle</li>
-          </ul>
-
-          <p>
-            🚀 Grâce à notre savoir-faire, nous garantissons des <strong>systèmes performants, sécurisés et évolutifs</strong>,
-            offrant une <strong>supervision complète</strong> et une <strong>exploitation simplifiée</strong> de vos installations industrielles.
-          </p>
-        </div>
-
-        <!-- IMAGE OU CARROUSEL À DROITE -->
-        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-          <div class="rounded overflow-hidden shadow-sm">
-            <img src="../../img/Deltav-Panel-1000x658.jpg" alt="Système DCS industriel" class="img-fluid rounded-3">
-          </div>
-        </div>
-
-      </div>
+    <!-- IMAGE À DROITE SUR DESKTOP (ordre inversé) -->
+    <div class="col-md-6 order-md-2 wow fadeInRight" data-wow-delay="0.4s">
+      <img src="../../img/Deltav-Panel-1000x658.jpg"
+           alt="Système DCS industriel"
+           class="img-fluid rounded-3 shadow-sm">
     </div>
+
+    <!-- TEXTE À GAUCHE -->
+    <div class="col-md-6 order-md-1 wow fadeInLeft" data-wow-delay="0.2s">
+
+      <h2 class="fw-bold mb-3 text-primary title-nowarp-desktop">
+        Système de Contrôle Distribué (DCS)
+      </h2>
+
+      <p class="mb-3">
+        Nos ingénieurs développent et intègrent des <strong>systèmes DCS (Distributed Control System)</strong>
+        dédiés à l’automatisation et à la supervision de procédés industriels complexes.
+      </p>
+
+      <p class="mb-3">
+        Nous maîtrisons plusieurs plateformes majeures, notamment <strong>Emerson DeltaV</strong> et
+        <strong>Siemens PCS7</strong>, permettant une gestion optimale des procédés continus et batch, ainsi
+        qu’une parfaite intégration avec les automates <strong>PLC</strong> existants.
+      </p>
+
+      <h5 class="mt-4 mb-3 text-nowrap">🔧Nos prestations incluent:</h5>
+      <ul class="list-unstyled mb-4">
+        <li><i class="fas fa-check text-primary me-2"></i> Conception et programmation de boucles PID et séquences automatiques</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Configuration des contrôleurs et interfaces opérateur (HMI / SCADA)</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Intégration DCS–PLC via Modbus, Profibus, Profinet, OPC...</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Tests, validation, mise en service et formation du personnel</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Migration et modernisation d’anciens systèmes de contrôle</li>
+      </ul>
+
+      <p>
+        🚀 Grâce à notre savoir-faire, nous garantissons des <strong>systèmes performants, sécurisés et évolutifs</strong>,
+        offrant une <strong>supervision complète</strong> et une <strong>exploitation simplifiée</strong> de vos installations industrielles.
+      </p>
+    </div>
+
   </div>
 </section>
-
-
 
   <!-- ===== Section 2 : HMI / SCADA ===== -->
         <section id="hmi" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
@@ -515,201 +510,204 @@
 
 <!-- ===== CSS ===== -->
 
+<!-- ===== Section 3 : (servo/ VFD) - version mobile ===== -->
 <!-- ===== Section 3 : (servo/ VFD) ===== -->
 <section id="servo-vfd" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      
-      <!-- Image à gauche -->
-      <div class="col-md-6">
-        <img src="../../img_GSA/installationelectrique5.jpg" 
-             alt="Servomoteurs et variateurs de vitesse" 
-             class="img-fluid rounded-3 shadow-sm">
-      </div>
+  <div class="row align-items-center g-5">
+    
+    <!-- Image à gauche -->
+    <div class="col-md-6">
+      <img src="../../img_GSA/installationelectrique5.jpg" 
+           alt="Servomoteurs et variateurs de vitesse" 
+           class="img-fluid rounded-3 shadow-sm">
+    </div>
 
-      <!-- Texte à droite -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3 text-primary">
-          Intégration de servomoteurs et variateurs de vitesse (VFD)
-        </h2>
+    <!-- Texte à droite -->
+    <div class="col-md-6">
+      <h2 class="fw-bold mb-3 text-primary">Intégration de servomoteurs et variateurs de vitesse (VFD)</h2>
 
-        <p class="lead mb-3">
-          Nos équipes conçoivent, configurent et mettent en service des systèmes de commande motorisée 
-          intégrant des <strong>servomoteurs</strong> et des <strong>variateurs de vitesse</strong> performants 
-          pour des applications nécessitant précision, dynamique et fiabilité.
-        </p>
+      <p class="lead mb-3">
+        Nos équipes conçoivent, configurent et mettent en service des systèmes de commande motorisée 
+        intégrant des <strong>servomoteurs</strong> et des <strong>variateurs de vitesse</strong> performants 
+        pour des applications nécessitant précision, dynamique et fiabilité.
+      </p>
 
-        <p>
-          Nous assurons l’intégration complète de ces équipements au sein de vos lignes de production, 
-          qu’il s’agisse de contrôle de mouvement multi-axes, de synchronisation de machines ou d’optimisation 
-          énergétique. Nos solutions s’appuient sur des marques de référence telles que 
-          <strong>Siemens, Schneider Electric, Allen-Bradley,danfoss, Bosch Rexroth et Omron</strong>.
-        </p>
+      <p>
+        Nous assurons l’intégration complète de ces équipements au sein de vos lignes de production, 
+        qu’il s’agisse de contrôle de mouvement multi-axes, de synchronisation de machines ou d’optimisation 
+        énergétique. Nos solutions s’appuient sur des marques de référence telles que 
+        <strong>Siemens, Schneider Electric, Allen-Bradley, Danfoss, Bosch Rexroth et Omron</strong>.
+      </p>
 
-        <ul class="list-unstyled mt-3">
-          <li><i class="fas fa-check text-primary me-2"></i>Configuration et réglage des servomoteurs et VFD</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Optimisation des boucles de régulation (vitesse, couple, position)</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Synchronisation d’axes et contrôle de mouvement avancé</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Intégration avec automates et systèmes SCADA</li>
-        </ul>
-      </div>
+      <ul class="list-unstyled mt-3">
+        <li><i class="fas fa-check text-primary me-2"></i>Configuration et réglage des servomoteurs et VFD</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Optimisation des boucles de régulation (vitesse, couple, position)</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Synchronisation d’axes et contrôle de mouvement avancé</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Intégration avec automates et systèmes SCADA</li>
+      </ul>
     </div>
   </div>
 </section>
-<!-- ===== Section 4 : (reseaux) ===== -->
+
+
+<!-- ===== Section 4 : (réseaux) ===== -->
 <section id="reseaux" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-  <div class="container">
-    <div class="row align-items-center g-5 flex-md-row-reverse">
+  <div class="row align-items-center g-5 flex-md-row-reverse">
 
-      <!-- Vidéo à droite -->
-      <div class="col-md-6">
-        <video class="img-fluid rounded-3 shadow-sm" autoplay muted loop playsinline>
-          <source src="../../videos/reseau.mp4" type="video/mp4">
-          Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-        </video>
-      </div>
+    <!-- Vidéo / image à droite -->
+    <div class="col-md-6">
+      <video class="img-fluid rounded-3 shadow-sm" autoplay muted loop playsinline>
+        <source src="../../videos/reseau.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+      </video>
+    </div>
 
-      <!-- Texte à gauche -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3 text-primary">
-          Intégration de réseaux de communication industriels
-        </h2>
+    <!-- Texte à gauche -->
+    <div class="col-md-6">
+      <h2 class="fw-bold mb-3 text-primary">Intégration de réseaux de communication industriels</h2>
 
-        <p class="lead mb-3">
-          Nous concevons et mettons en œuvre des infrastructures de communication 
-          industrielles robustes, sécurisées et performantes, assurant une connectivité fiable 
-          entre vos équipements, automates et systèmes de supervision.
-        </p>
+      <p class="lead mb-3">
+        Nous concevons et mettons en œuvre des infrastructures de communication 
+        industrielles robustes, sécurisées et performantes, assurant une connectivité fiable 
+        entre vos équipements, automates et systèmes de supervision.
+      </p>
 
-        <p>
-          Nos experts maîtrisent l’intégration et la configuration des principaux 
-          <strong>protocoles industriels</strong> tels que 
-          <strong>Profinet, Modbus TCP/IP, EtherNet/IP, Profibus et CANopen</strong>, 
-          ainsi que les architectures de communication pour l’<strong>Industrie 4.0</strong> 
-          et l’interconnexion avec les systèmes <strong>MES / SCADA</strong>.
-        </p>
+      <p>
+        Nos experts maîtrisent l’intégration et la configuration des principaux 
+        <strong>protocoles industriels</strong> tels que 
+        <strong>Profinet, Modbus TCP/IP, EtherNet/IP, Profibus et CANopen</strong>, 
+        ainsi que les architectures de communication pour l’<strong>Industrie 4.0</strong> 
+        et l’interconnexion avec les systèmes <strong>MES / SCADA</strong>.
+      </p>
 
-        <ul class="list-unstyled mt-3">
-          <li><i class="fas fa-check text-primary me-2"></i>Conception d’architectures réseaux (filaire, Wi-Fi, fibre, hybride)</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Configuration et diagnostic de switches, routeurs et passerelles industrielles</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Analyse de performance et sécurisation des communications</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Intégration et supervision réseau dans les environnements SCADA</li>
-        </ul>
-      </div>
+      <ul class="list-unstyled mt-3">
+        <li><i class="fas fa-check text-primary me-2"></i>Conception d’architectures réseaux (filaire, Wi-Fi, fibre, hybride)</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Configuration et diagnostic de switches, routeurs et passerelles industrielles</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Analyse de performance et sécurisation des communications</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Intégration et supervision réseau dans les environnements SCADA</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ===== Section 5 : (instrumentation) ===== -->
+<!-- ===== Section 5 : Instrumentation ===== -->
 <section id="instrumentation" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-  <div class="container">
-    <div class="row align-items-center g-5">
+  <div class="row align-items-center g-5">
 
-      <!-- Image à gauche -->
-      <div class="col-md-6">
-        <img src="../../img_GSA/instruments.avif" 
-             alt="Instrumentation et métrologie industrielle" 
-             class="img-fluid rounded-3 shadow-sm">
-      </div>
-
-      <!-- Texte à droite -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3 text-primary">
-          Instrumentation & Métrologie industrielle
-        </h2>
-
-        <p class="lead mb-3">
-          Nos spécialistes assurent la mise en œuvre, la calibration et la maintenance 
-          des instruments de mesure et de contrôle, garantissant la précision et la 
-          fiabilité de vos procédés industriels.
-        </p>
-
-        <p>
-          Du capteur à la chaîne de mesure complète, nous intervenons sur une large 
-          gamme d’équipements : <strong>capteurs de pression, température, débit, niveau, 
-          analyseurs et transmetteurs</strong>.  
-          Nos solutions répondent aux exigences des secteurs les plus rigoureux : 
-          <strong>agroalimentaire, pharmaceutique, énergie, pétrochimie, et manufacturing</strong>.
-        </p>
-
-        <ul class="list-unstyled mt-3">
-          <li><i class="fas fa-check text-primary me-2"></i>Étude et sélection des instruments adaptés à vos procédés</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Installation, câblage et configuration des capteurs et transmetteurs</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Étalonnage, calibration et vérification métrologique</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Rédaction de rapports et certificats de conformité</li>
-          <li><i class="fas fa-check text-primary me-2"></i>Maintenance préventive et corrective des instruments</li>
-        </ul>
-      </div>
+    <!-- Image à gauche -->
+    <div class="col-md-6">
+      <img src="../../img_GSA/instruments.avif" 
+           alt="Instrumentation et métrologie industrielle" 
+           class="img-fluid rounded-3 shadow-sm">
     </div>
+
+    <!-- Texte à droite -->
+    <div class="col-md-6">
+      <h2 class="fw-bold mb-3 text-primary">
+        Instrumentation & Métrologie industrielle
+      </h2>
+
+      <p class="lead mb-3">
+        Nos spécialistes assurent la mise en œuvre, la calibration et la maintenance 
+        des instruments de mesure et de contrôle, garantissant la précision et la 
+        fiabilité de vos procédés industriels.
+      </p>
+
+      <p>
+        Du capteur à la chaîne de mesure complète, nous intervenons sur une large 
+        gamme d’équipements : <strong>capteurs de pression, température, débit, niveau, 
+        analyseurs et transmetteurs</strong>.  
+        Nos solutions répondent aux exigences des secteurs les plus rigoureux : 
+        <strong>agroalimentaire, pharmaceutique, énergie, pétrochimie, et manufacturing</strong>.
+      </p>
+
+      <ul class="list-unstyled mt-3">
+        <li><i class="fas fa-check text-primary me-2"></i>Étude et sélection des instruments adaptés à vos procédés</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Installation, câblage et configuration des capteurs et transmetteurs</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Étalonnage, calibration et vérification métrologique</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Rédaction de rapports et certificats de conformité</li>
+        <li><i class="fas fa-check text-primary me-2"></i>Maintenance préventive et corrective des instruments</li>
+      </ul>
+    </div>
+
   </div>
 </section>
+
 <!-- ===== Section 6 : Migration & Revamping d’automates et interfaces opérateurs ===== -->
 <section id="Migration_Revamping" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-12">
-        <h2 class="fw-bold mb-3 text-primary"> Migration & Revamping d’automates et interfaces opérateurs</h2>
+  <div class="row g-4">
+    <div class="col-12">
+      <h2 class="fw-bold mb-3 text-primary px-0">
+        Migration & Revamping d’automates et interfaces opérateurs
+      </h2>
 
-        <p>
-          La migration et le revamping des systèmes automatisés sont des étapes clés pour assurer la pérennité,
-          la performance et la compatibilité de vos installations industrielles avec les technologies actuelles.
-          Nos équipes vous accompagnent dans la modernisation de vos automates, interfaces opérateurs et systèmes
-          de contrôle-commande, tout en garantissant la continuité de production et la sécurité des procédés.
-        </p>
+      <p>
+        La migration et le revamping des systèmes automatisés sont des étapes clés pour assurer la pérennité,
+        la performance et la compatibilité de vos installations industrielles avec les technologies actuelles.
+        Nos équipes vous accompagnent dans la modernisation de vos automates, interfaces opérateurs et systèmes
+        de contrôle-commande, tout en garantissant la continuité de production et la sécurité des procédés.
+      </p>
 
-        <p>
-          Après une analyse détaillée de votre installation existante, nous mettons en œuvre une méthodologie rigoureuse
-          comprenant :
-        </p>
+      <p>
+        Après une analyse détaillée de votre installation existante, nous mettons en œuvre une méthodologie rigoureuse
+        comprenant :
+      </p>
 
-        <ul class="list-unstyled">
-          <li>• <strong>Recensement du parc d’automates et d’interfaces opérateurs</strong>, afin d’identifier les équipements obsolètes et les risques associés ;</li>
-          <li>• <strong>Préparation d’un plan de migration</strong> adapté à vos contraintes techniques et de production ;</li>
-          <li>• <strong>Remplacement des automates et interfaces opérateurs</strong>, avec intégration des nouveaux matériels selon les standards du marché ;</li>
-          <li>• <strong>Conversion des programmes</strong> vers les nouvelles plateformes pour préserver la logique de fonctionnement et les performances de vos procédés ;</li>
-          <li>• <strong>Création de copies de sauvegarde</strong> de vos programmes et configurations ;</li>
-          <li>• <strong>Remplacement des piles</strong> et composants critiques pour fiabiliser vos systèmes dans la durée.</li>
-        </ul>
+      <ul class="list-unstyled">
+        <li>• <strong>Recensement du parc d’automates et d’interfaces opérateurs</strong>, afin d’identifier les équipements obsolètes et les risques associés ;</li>
+        <li>• <strong>Préparation d’un plan de migration</strong> adapté à vos contraintes techniques et de production ;</li>
+        <li>• <strong>Remplacement des automates et interfaces opérateurs</strong>, avec intégration des nouveaux matériels selon les standards du marché ;</li>
+        <li>• <strong>Conversion des programmes</strong> vers les nouvelles plateformes pour préserver la logique de fonctionnement et les performances de vos procédés ;</li>
+        <li>• <strong>Création de copies de sauvegarde</strong> de vos programmes et configurations ;</li>
+        <li>• <strong>Remplacement des piles</strong> et composants critiques pour fiabiliser vos systèmes dans la durée.</li>
+      </ul>
 
-        <p>
-          Nous intervenons sur la plupart des grandes marques d’automates et d’interfaces opérateurs, notamment :
-        </p>
+      <p>
+        Nous intervenons sur la plupart des grandes marques d’automates et d’interfaces opérateurs, notamment :
+      </p>
 
-        <h4 class="mt-4">Automates à remplacer :</h4>
-        <ul>
-          <li>Allen Bradley : PLC2, PLC3, PLC5, SLC100, SLC500…</li>
-          <li>GE Fanuc : 90-20, 90-30, Genius I/O, VersaMax…</li>
-          <li>Mitsubishi : FX, Q, A…</li>
-          <li>Modicon : 984, Compact…</li>
-          <li>Omron : C20K, C200, C200H, C200HS…</li>
-          <li>Panasonic : FP Series…</li>
-          <li>Siemens : S5…</li>
-          <li>Télémécanique : TSX17, TSX27, TSX47…</li>
-          <li>Texas Instruments : TI505, TI405, TI305…</li>
-          <li>… et bien d’autres modèles.</li>
-        </ul>
+      <div class="row g-4">
+  <!-- Colonne 1 : Automates -->
+  <div class="col-md-6">
+    <h4 class="mt-4">Automates à remplacer :</h4>
+    <ul>
+      <li>Allen Bradley : PLC2, PLC3, PLC5, SLC100, SLC500…</li>
+      <li>GE Fanuc : 90-20, 90-30, Genius I/O, VersaMax…</li>
+      <li>Mitsubishi : FX, Q, A…</li>
+      <li>Modicon : 984, Compact…</li>
+      <li>Omron : C20K, C200, C200H, C200HS…</li>
+      <li>Panasonic : FP Series…</li>
+      <li>Siemens : S5…</li>
+      <li>Télémécanique : TSX17, TSX27, TSX47…</li>
+      <li>Texas Instruments : TI505, TI405, TI305…</li>
+      <li>… et bien d’autres modèles.</li>
+    </ul>
+  </div>
 
-        <h4 class="mt-3">Interfaces opérateur à remplacer :</h4>
-        <ul>
-          <li>Allen Bradley : PanelView, ControlView…</li>
-          <li>Horner Electric (GE Fanuc) : HE…</li>
-          <li>Pro-Face : GP, ST, GLC…</li>
-          <li>Omron : NT, NTS…</li>
-          <li>Siemens : OP5, OP7…</li>
-          <li>… et plusieurs autres.</li>
-        </ul>
+  <!-- Colonne 2 : Interfaces opérateur -->
+  <div class="col-md-6">
+    <h4 class="mt-4">Interfaces opérateur à remplacer :</h4>
+    <ul>
+      <li>Allen Bradley : PanelView, ControlView…</li>
+      <li>Horner Electric (GE Fanuc) : HE…</li>
+      <li>Pro-Face : GP, ST, GLC…</li>
+      <li>Omron : NT, NTS…</li>
+      <li>Siemens : OP5, OP7…</li>
+      <li>… et plusieurs autres.</li>
+    </ul>
+  </div>
+</div>
 
-        <p class="mt-3">
-          Grâce à notre expertise multi-marques et à notre maîtrise des outils de conversion logicielle,
-          nous garantissons une transition fluide, sécurisée et documentée vers vos nouvelles plateformes d’automatisation.
-          Notre objectif : vous fournir un système fiable, performant et évolutif, prêt à répondre aux exigences de l’industrie 4.0.
-        </p>
-      </div>
+      <p class="mt-3">
+        Grâce à notre expertise multi-marques et à notre maîtrise des outils de conversion logicielle,
+        nous garantissons une transition fluide, sécurisée et documentée vers vos nouvelles plateformes d’automatisation.
+        Notre objectif : vous fournir un système fiable, performant et évolutif, prêt à répondre aux exigences de l’industrie 4.0.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- ================== TELEMETRIE ET MONITORING (intégrée à la page Automatisme) ================== -->
+<!-- ==================partie 7 : TELEMETRIE ET MONITORING (intégrée à la page Automatisme) ================== -->
 <section id="telemetrie" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
   <div class="container">
 
@@ -718,80 +716,80 @@
     </h1>
 
     <!-- ================== PARTIE 1 : TELEMETRIE ================== -->
-    <div class="row g-5 align-items-center mb-5">
-      <!-- Texte gauche -->
-      <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-        <h3 class="mb-3 text-secondary">🌐 Télémétrie – Accès distant sécurisé</h3>
+<!-- ================== PARTIE 1 : TELEMETRIE ================== -->
+<div class="row align-items-center g-5 mb-5">
 
-        <p class="mb-3">
-          <strong>GSA Automation</strong> intègre des systèmes de <strong>télémétrie industrielle</strong> 
-          permettant la <strong>supervision à distance</strong> des équipements via des connexions fiables et sécurisées.
-        </p>
+  <!-- TEXTE À GAUCHE -->
+ <div class="col-lg-6 wow fadeInLeft px-0" data-wow-delay="0.2s">
+    <h3 class="mb-3 text-secondary  ">
+      🌐 Télémétrie – Accès distant sécurisé
+    </h3>
 
-        <p class="mb-3">
-          Grâce à la plateforme <strong>Talk2M</strong> et le logiciel <strong>eCatcher</strong>, 
-          nous assurons un <strong>accès VPN sécurisé</strong> à vos automates et systèmes, 
-          facilitant la maintenance, le diagnostic et la gestion multi-sites.
-        </p>
+    <p class="lead mb-3">
+      <strong>GSA Automation</strong> intègre des systèmes de <strong>télémétrie industrielle</strong> 
+      permettant la <strong>supervision à distance</strong> des équipements via des connexions fiables et sécurisées.
+    </p>
 
-        <h5 class="mt-4 mb-3">🔧 Nos services incluent :</h5>
-        <ul class="list-unstyled mb-4">
-          <li><i class="fas fa-check text-secondary me-2"></i> Étude et conception d’architectures de télémétrie</li>
-          <li><i class="fas fa-check text-secondary me-2"></i> Intégration de modules de communication (radio, 4G/5G, satellite...)</li>
-          <li><i class="fas fa-check text-secondary me-2"></i> Connexions VPN via <strong>Talk2M / eCatcher</strong></li>
-          <li><i class="fas fa-check text-secondary me-2"></i> Sécurisation des communications industrielles</li>
-        </ul>
+    <p>
+      Grâce à la plateforme <strong>Talk2M</strong> et le logiciel <strong>eCatcher</strong>, 
+      nous assurons un <strong>accès VPN sécurisé</strong> à vos automates et systèmes, 
+      facilitant la maintenance, le diagnostic et la gestion multi-sites.
+    </p>
 
-        <p>
-          🚀 Une connectivité robuste et sécurisée, pour une gestion distante efficace de vos installations.
-        </p>
-      </div>
+    <h5 class="mt-4 mb-3">🔧 Nos services incluent :</h5>
+    <ul class="list-unstyled mb-4">
+      <li><i class="fas fa-check text-primary me-2"></i> Étude et conception d’architectures de télémétrie</li>
+      <li><i class="fas fa-check text-primary me-2"></i> Intégration de modules de communication (radio, 4G/5G, satellite...)</li>
+      <li><i class="fas fa-check text-primary me-2"></i> Connexions VPN via <strong>Talk2M / eCatcher</strong></li>
+      <li><i class="fas fa-check text-primary me-2"></i> Sécurisation des communications industrielles</li>
+    </ul>
 
-<!-- Carousel droite -->
-<div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-
-  <div class="carousel-section">
-    <div id="telemetrieCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel">
-
-      <!-- Indicateurs -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#telemetrieCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#telemetrieCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#telemetrieCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <!-- Images -->
-      <div class="carousel-inner rounded">
-        <div class="carousel-item active">
-          <img src="../../img/Ewon_Cosy+_4G_EU_Cabinet_7.avif" class="d-block w-100 rounded" alt="Talk2M eCatcher">
-        </div>
-        <div class="carousel-item">
-          <img src="../../img/plcrouter.jpg" class="d-block w-100 rounded" alt="Réseau industriel">
-        </div>
-        <div class="carousel-item">
-          <img src="../../img/telemetrie3.jpg" class="d-block w-100 rounded" alt="Communication IIoT">
-        </div>
-      </div>
-
-      <!-- Bouton précédent -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#telemetrieCarousel" data-bs-slide="prev">
-        <span class="btn-lg-square bg-light shadow-sm rounded-circle" aria-hidden="true">
-          <i class="fas fa-chevron-left fa-2x text-secondary"></i>
-        </span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-
-      <!-- Bouton suivant -->
-      <button class="carousel-control-next" type="button" data-bs-target="#telemetrieCarousel" data-bs-slide="next">
-        <span class="btn-lg-square bg-light shadow-sm rounded-circle" aria-hidden="true">
-          <i class="fas fa-chevron-right fa-2x text-secondary"></i>
-        </span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
-    </div>
+    <p>
+      🚀 Une connectivité robuste et sécurisée, pour une gestion distante efficace de vos installations.
+    </p>
   </div>
 
+  <!-- CAROUSEL À DROITE -->
+  <div class="col-lg-6 order-md-2 wow fadeInRight" data-wow-delay="0.4s">
+    <div class="carousel-section">
+      <div id="telemetrieCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel">
+
+        <!-- Indicateurs -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#telemetrieCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#telemetrieCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#telemetrieCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Images -->
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="../../img/Ewon_Cosy+_4G_EU_Cabinet_7.avif" class="d-block w-100 rounded">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/plcrouter.jpg" class="d-block w-100 rounded">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/telemetrie3.jpg" class="d-block w-100 rounded">
+          </div>
+        </div>
+
+        <!-- Boutons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#telemetrieCarousel" data-bs-slide="prev">
+          <span class="btn-lg-square bg-light shadow-sm rounded-circle">
+            <i class="fas fa-chevron-left fa-2x text-secondary"></i>
+          </span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#telemetrieCarousel" data-bs-slide="next">
+          <span class="btn-lg-square bg-light shadow-sm rounded-circle">
+            <i class="fas fa-chevron-right fa-2x text-secondary"></i>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -799,17 +797,17 @@
     <hr class="my-5 opacity-75" />
 
     <!-- ================== PARTIE 2 : MONITORING ================== -->
-    <div class="row g-5 align-items-center flex-lg-row-reverse">
+    <div class="row align-items-center g-5 mb-5">
       <!-- Texte droite -->
-      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-        <h3 class="mb-3 text-secondary">📊 Monitoring – Supervision & Analyse</h3>
+        <div class="col-lg-6 wow fadeInLeft px-0" data-wow-delay="0.2s">
+        <h3 class="mb-3 text-secondary title-nowarp-desktop">📊 Monitoring – Supervision & Analyse</h3>
 
-        <p class="mb-3">
+        <p class="lead mb-3">
           Nous mettons en place des solutions de <strong>monitoring en temps réel</strong> 
           pour analyser les performances de vos équipements et garantir la continuité de production.
         </p>
 
-        <p class="mb-3">
+        <p>
           Nos experts intègrent des plateformes telles que <strong>IVTracer</strong>, <strong>Ignition</strong> 
           et <strong>Aveva Insight</strong>, permettant la <strong>visualisation des données</strong>, 
           la <strong>traçabilité</strong> et l’<strong>analyse prédictive</strong>.
@@ -817,16 +815,11 @@
 
         <h5 class="mt-4 mb-3">📈 Fonctions principales :</h5>
         <ul class="list-unstyled mb-4">
-          <li><i class="fas fa-check text-secondary me-2"></i> Suivi en temps réel des process industriels</li>
-          <li><i class="fas fa-check text-secondary me-2"></i> Tableaux de bord personnalisés et rapports dynamiques</li>
-          <li><i class="fas fa-check text-secondary me-2"></i> Historisation et analyse des données</li>
-          <li><i class="fas fa-check text-secondary me-2"></i> Intégration avec SCADA / MES / Cloud</li>
+          <li><i class="fas fa-check text-primary me-2"></i> Suivi en temps réel des process industriels</li>
+          <li><i class="fas fa-check text-primary me-2"></i> Tableaux de bord personnalisés et rapports dynamiques</li>
+          <li><i class="fas fa-check text-primary me-2"></i> Historisation et analyse des données</li>
+          <li><i class="fas fa-check text-primary me-2"></i> Intégration avec SCADA / MES / Cloud</li>
         </ul>
-
-        <p>
-          💡 Grâce à <strong>IVTracer</strong>, <strong>Ignition</strong> ou <strong>Aveva Insight</strong>, 
-          vous disposez d’une vision claire et centralisée de vos installations.
-        </p>
       </div>
 
       <!-- Image gauche -->
@@ -874,7 +867,14 @@
 .automatisme-layout h2 {
   margin-top: 0 !important;
 }
-
+/* Couleur homogène pour tout le texte dans la page Automatisme */
+.automatisme-layout p,
+.automatisme-layout li,
+.automatisme-layout .lead,
+.automatisme-layout ul,
+.automatisme-layout span {
+  color: #333 !important;
+}
 
 /* === Section générale === */
 .intro-automatisme {
@@ -941,6 +941,9 @@ html {
 @media (min-width: 992px) {
   .menu-sticky {
     margin-left: 1.5rem;
+  }
+  .title-nowarp-desktop {
+    white-space: nowrap;
   }
 }
 
@@ -1136,7 +1139,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <img src="../../img_const/emerson.png" alt="Emerson">
       <img src="../../img_const/omron.png" alt="Omron">
       <img src="../../img_const/mitsubishi.png" alt="Mitsubishi">
-       <img src="../../img_const/Honeywell.png" alt="Honeywell">
+      <img src="../../img_const/Honeywell.png" alt="Honeywell">
       <img src="../../img_const/beckhoff.png" alt="Beckhoff">
       <img src="../../img_const/weidmuller.png" alt="weidmuller">
       <img src="../../img_const/delta.png" alt="Delta">
@@ -1147,7 +1150,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <img src="../../img_const/schneider.png" alt="Schneider">
       <img src="../../img_const/rockwell.png" alt="Rockwell Automation">
       <img src="../../img_const/allen bradley.png" alt="Allen-Bradley">
-       <img src="../../img_const/allenrockwell.png" alt="Allenrockwell">
+      <img src="../../img_const/allenrockwell.png" alt="Allenrockwell">
       <img src="../../img_const/yokogawa.png" alt="Yokogawa">
       <img src="../../img_const/emerson.png" alt="Emerson">
       <img src="../../img_const/omron.png" alt="Omron">
@@ -1156,7 +1159,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <img src="../../img_const/beckhoff.png" alt="Beckhoff">
       <img src="../../img_const/weidmuller.png" alt="weidmuller">
       <img src="../../img_const/delta.png" alt="Delta">
-
+ 
     </div>
   </div>
 </div>
