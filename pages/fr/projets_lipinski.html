@@ -212,43 +212,6 @@
   }
 }
 
-.brochure-panel-mobile {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;       /* moins d'espace entre les boutons */
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px;   /* padding réduit */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-.brochure-panel-mobile .title {
-  font-size: 14px; /* titre légèrement plus petit */
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.download-btn {
-  display: flex;
-  align-items: center;
-  background: #ff6600;
-  color: #fff;
-  padding: 8px;   /* padding réduit */
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 0.25s ease;
-}
-
-.download-btn:hover {
-  background: #e05500;
-  transform: translateY(-1px);
-}
-
-.download-btn img {
-  display: block;
-}
   </style>
 </body>
     <!--<script>
@@ -370,8 +333,8 @@
 </style>
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
-  <div class="container">
-    <ol class="breadcrumb mb-0">
+  <div class="container-fluid">
+    <ol class="breadcrumb mb-0 breadcrumb-nowrap">
       <li class="breadcrumb-item">
         <a href="index.html" class="breadcrumb-link">Accueil</a>
       </li>
@@ -385,6 +348,22 @@
 <!-- Breadcrumb End -->
 
 <style>
+  /* ============================= */
+/* BREADCRUMB SANS RETOUR LIGNE */
+/* ============================= */
+.breadcrumb-nowrap {
+  white-space: nowrap;        /* interdit le retour à la ligne */
+  overflow: hidden;           /* évite débordement */
+  text-overflow: ellipsis;    /* ... si trop long */
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Optionnel : garder les items collés */
+.breadcrumb-item {
+  white-space: nowrap;
+}
+
 /* Supprime le double slash Bootstrap et garde un seul */
 .breadcrumb-item + .breadcrumb-item::before {
   content: "/";
@@ -411,8 +390,11 @@
   color: #212529;
   font-weight: 600;
 }
-</style>
+.breadcrumb { font-size: clamp(9.5px, 2.5vw, 18px); }
 
+/* Media query pour les petits écrans */
+
+</style>
 <!-- Projet Détail Start -->
 <section class="project-detail py-5 bg-light">
   <div class="container py-5">
@@ -462,33 +444,16 @@
       <div id="carouselLipinski" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-<<<<<<< HEAD
-            <img src="/img_projets/lipinskiprincipal.JPG" class="d-block w-100 carousel-img" alt="Photo 1">
-          </div>
-          <div class="carousel-item"><img src="/img_projets/lipinskistation.jpg" class="d-block w-100 carousel-img" alt="Photo 1"></div>
-          <div class="carousel-item"><img src="/img_projets/lipinski1.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          
-          
-          <div class="carousel-item"><img src="/img_projets/lipinski_armoire.jpg" class="d-block w-100 carousel-img" alt="Photo 5"></div>
-          <div class="carousel-item"><img src="/img_projets/lipinskispenserhmi.jpg" class="d-block w-100 carousel-img" alt="Photo 6"></div>
-          
-          <div class="carousel-item"><img src="/img_projets/lipinski_hmi.jpg" class="d-block w-100 carousel-img" alt="Photo 8"></div>
-          <div class="carousel-item"><img src="/img_projets/lipinski_scada.JPG" class="d-block w-100 carousel-img" alt="Photo 9"></div>
-          <div class="carousel-item"><img src="/img_projets/lipinskip.jpg" class="d-block w-100 carousel-img" alt="Photo 10"></div>
-=======
-            <img src="../../img_projets/lipinskiprincipal.JPG" class="d-block w-100 carousel-img" alt="Photo 1">
-          </div>
+
+            <img src="../../img_projets/lipinskiprincipal.JPG" class="d-block w-100 carousel-img" alt="Photo 1"> </div>
           <div class="carousel-item"><img src="../../img_projets/lipinskistation.jpg" class="d-block w-100 carousel-img" alt="Photo 1"></div>
           <div class="carousel-item"><img src="../../img_projets/lipinski1.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          
-          
           <div class="carousel-item"><img src="../../img_projets/lipinski_armoire.jpg" class="d-block w-100 carousel-img" alt="Photo 5"></div>
           <div class="carousel-item"><img src="../../img_projets/lipinskispenserhmi.JPG" class="d-block w-100 carousel-img" alt="Photo 6"></div>
-          
           <div class="carousel-item"><img src="../../img_projets/lipinski_hmi.jpg" class="d-block w-100 carousel-img" alt="Photo 8"></div>
           <div class="carousel-item"><img src="../../img_projets/lipinski_scada.JPG" class="d-block w-100 carousel-img" alt="Photo 9"></div>
           <div class="carousel-item"><img src="../../img_projets/lipinskip.jpg" class="d-block w-100 carousel-img" alt="Photo 10"></div>
->>>>>>> 80bdfec237012ee2f54c1b2855ae08f9d4bd581a
+
           <!-- Ajoute plus de photos si nécessaire -->
         </div>
 
