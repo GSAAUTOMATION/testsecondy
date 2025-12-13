@@ -370,21 +370,37 @@
 </style>
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
-  <div class="container">
-    <ol class="breadcrumb mb-0">
+  <div class="container-fluid">
+    <ol class="breadcrumb mb-0 breadcrumb-nowrap">
       <li class="breadcrumb-item">
         <a href="index.html" class="breadcrumb-link">Accueil</a>
       </li>
       <li class="breadcrumb-item">
         <a href="index.html#services" class="breadcrumb-link">Services</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Fabrication et Installation d’ensembles Process sur Mesure</li>
+      <li class="breadcrumb-item active" aria-current="page">Fabrication et Installation d’ensembles Process </li>
     </ol>
   </div>
 </nav>
 <!-- Breadcrumb End -->
 
 <style>
+  /* ============================= */
+/* BREADCRUMB SANS RETOUR LIGNE */
+/* ============================= */
+.breadcrumb-nowrap {
+  white-space: nowrap;        /* interdit le retour à la ligne */
+  overflow: hidden;           /* évite débordement */
+  text-overflow: ellipsis;    /* ... si trop long */
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Optionnel : garder les items collés */
+.breadcrumb-item {
+  white-space: nowrap;
+}
+
 /* Supprime le double slash Bootstrap et garde un seul */
 .breadcrumb-item + .breadcrumb-item::before {
   content: "/";
@@ -411,7 +427,13 @@
   color: #212529;
   font-weight: 600;
 }
+.breadcrumb { font-size: clamp(9.2px, 2.5vw, 18px); }
+
+/* Media query pour les petits écrans */
+
 </style>
+
+
 
 
  <!-- Service Details Start -->
