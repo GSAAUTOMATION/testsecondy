@@ -293,103 +293,23 @@
     <!-- Navbar & Hero End -->
  <!-- ====== Video Section ====== -->
 <!-- ====== Video Section ====== -->
-<div class="video-section">
+<div class="video-section-undernavbar">
   <video autoplay muted loop playsinline>
     <source src="../../videos/videobackground.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <!-- Title overlay -->
-  <div class="video-title">
+  <div class="video-title-under">
     <h2>Our Projects</h2>
   </div>
 </div>
 
-<style>
-/* ===== Base container ===== */
-.video-section {
-  position: relative;
-  width: 100%;
-  min-height: 300px; /* fallback min-height */
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* left align text */
-  padding: 60px 5%;
-  overflow: hidden;
-}
 
-/* ===== Background video ===== */
-.video-section video {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* keep aspect ratio, cover area */
-  z-index: 0;
-}
-
-/* ===== Text overlay ===== */
-.video-title {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  max-width: 800px;
-}
-
-.video-title h4 {
-  margin: 0;
-  font-size: clamp(16px, 2vw, 22px); /* responsive font */
-  font-weight: 800;
-   color: #fff;
-}
-
-.video-title h2 {
-  margin: 10px 0 0;
-  font-size: clamp(24px, 4vw, 42px); /* responsive font */
-  font-weight: 900;
-  color: #FF5E15;
-}
-
-/* ===== Tablet adjustments ===== */
-@media (max-width: 1200px) {
-    body {
-    padding-top: 70px;
-  }
-  html {
-    scroll-padding-top: 70px;
-  }
-  .video-section {
-    padding: 50px 5%;
-    justify-content: center; /* center text on tablets */
-    text-align: center;
-  }
-
-  .video-title h2 {
-    font-size: clamp(22px, 5vw, 34px);
-  }
-}
-
-/* ===== Mobile adjustments ===== */
-@media (max-width: 576px) {
-  .video-section {
-    padding: 40px 10px;
-    min-height: 220px;
-  }
-
-  .video-title h4 {
-    font-size: 14px;
-  }
-
-  .video-title h2 {
-    font-size: 20px;
-    line-height: 1.3;
-  }
-}
-</style>
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
   <div class="container">
-    <ol class="breadcrumb mb-0">
+    <ol class="breadcrumb mb-0 ">
       <li class="breadcrumb-item">
         <a href="index.html" class="breadcrumb-link">Home</a>
       </li>

@@ -273,105 +273,23 @@
     <!-- Navbar & Hero End -->
  <!-- ====== Video Section ====== -->
 <!-- ====== Video Section ====== -->
-<div class="video-section">
+<div class="video-section-undernavbar">
   <video autoplay muted loop playsinline>
     <source src="../../videos/videobackground.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <!-- Title overlay -->
-  <div class="video-title">
+  <div class="video-title-under">
     <h4>Our Projects</h4>
     <h2>Automated LNG Station for Trucks</h2>
   </div>
 </div>
 
-
-<style>
-/* ===== Base container ===== */
-.video-section {
-  position: relative;
-  width: 100%;
-  min-height: 300px; /* fallback min-height */
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* left align text */
-  padding: 60px 5%;
-  overflow: hidden;
-}
-
-/* ===== Background video ===== */
-.video-section video {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* keep aspect ratio, cover area */
-  z-index: 0;
-}
-
-/* ===== Text overlay ===== */
-.video-title {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  max-width: 800px;
-}
-
-.video-title h4 {
-  margin: 0;
-  font-size: clamp(16px, 2vw, 22px); /* responsive font */
-  font-weight: 800;
-   color: #fff;
-}
-
-.video-title h2 {
-  margin: 10px 0 0;
-  font-size: clamp(24px, 4vw, 42px); /* responsive font */
-  font-weight: 900;
-  color: #FF5E15;
-}
-
-/* ===== Tablet adjustments ===== */
-@media (max-width: 1200px) {
-    body {
-    padding-top: 70px;
-  }
-  html {
-    scroll-padding-top: 70px;
-  }
-  .video-section {
-    padding: 50px 5%;
-    justify-content: center; /* center text on tablets */
-    text-align: center;
-  }
-
-  .video-title h2 {
-    font-size: clamp(22px, 5vw, 34px);
-  }
-}
-
-/* ===== Mobile adjustments ===== */
-@media (max-width: 576px) {
-  .video-section {
-    padding: 40px 10px;
-    min-height: 220px;
-  }
-
-  .video-title h4 {
-    font-size: 14px;
-  }
-
-  .video-title h2 {
-    font-size: 20px;
-    line-height: 1.3;
-  }
-}
-</style>
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
-  <div class="container">
-    <ol class="breadcrumb mb-0">
+  <div class="container-fluid">
+    <ol class="breadcrumb mb-0 breadcrumb-nowrap">
       <li class="breadcrumb-item">
         <a href="index.html" class="breadcrumb-link">Home</a>
       </li>
@@ -383,37 +301,6 @@
   </div>
 </nav>
 <!-- Breadcrumb End -->
-
-
-<style>
-/* Supprime le double slash Bootstrap et garde un seul */
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "/";
-  color: #6c757d;
-}
-
-/* Style des liens du breadcrumb */
-.breadcrumb-link {
-  color: #007bff; /* bleu GSA Automation */
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-/* Effet hover : changement de couleur + soulignement animé */
-.breadcrumb-link:hover {
-  color:#001659 ; /* bleu plus foncé */
-  text-decoration: underline;
-  text-underline-offset: 4px; /* espace entre le texte et le soulignement */
-}
-
-/* Dernier élément actif (page courante) */
-.breadcrumb-item.active {
-  color: #212529;
-  font-weight: 600;
-}
-</style>
-
 <!-- Project Detail Start -->
 <section class="project-detail py-5 bg-light">
   <div class="container py-5">
