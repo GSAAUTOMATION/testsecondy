@@ -607,7 +607,7 @@ html, body {
 /* ===== Mobile : carousel normal ===== */
 @media (max-width: 991.98px) {
   .carousel {
-    margin-top: -35px !important; /* pour compenser la navbar fixe */
+    margin-top: -20px !important; /* pour compenser la navbar fixe */
   }
 }
 
@@ -636,6 +636,12 @@ html, body {
   .carousel-control-next span {
     width: 44px;
     height: 44px;
+  }
+    .carousel,
+  .carousel-item,
+  .carousel-item img {
+    height: calc(100vh);
+   
   }
 }
 
@@ -749,7 +755,7 @@ VIDEO - SECTION
 .about .about-item-image {
     position: relative;
     background: var(--bs-light);
-    background-image: url(../img_GSA/alim.jpeg);
+    background-image: url(../../img_GSA/alim.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1392,7 +1398,8 @@ VIDEO - SECTION
 /*** secteur start***/
 /* Bloc principal */
 .module-content.section-content {
-  font-family: 'Roboto', 'Segoe UI', sans-serif;
+ font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+
   color: #222;
 }
 
@@ -1532,23 +1539,10 @@ VIDEO - SECTION
 }
 
 /* ===== Tablet adjustments ===== */
-@media (max-width: 1200px) {
-    body {
-    padding-top: 70px;
-  }
-  html {
-    scroll-padding-top: 70px;
-  }
-  .video-section-undernavbar {
-    padding: 50px 5%;
-    justify-content: center; /* center text on tablets */
-    text-align: center;
-  }
 
-  .video-title-under h2 {
-    font-size: clamp(22px, 5vw, 34px);
-  }
-}
+
+
+
 
 /* ===== Mobile adjustments ===== */
 @media (max-width: 576px) {

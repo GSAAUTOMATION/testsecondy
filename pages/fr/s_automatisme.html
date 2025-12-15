@@ -12,9 +12,7 @@
    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
 
@@ -284,7 +282,25 @@
     <h2>Automatisme & Contrôle-Commande</h2>
   </div>
 </div>
-
+<style>
+/* ===== Tablet adjustments ===== */
+@media (max-width: 1200px) {
+    body {
+    padding-top: 70px;
+  }
+  html {
+    scroll-padding-top: 70px;
+  }
+  .video-section-undernavbar {
+    padding: 50px 5%;
+    justify-content: center; /* center text on tablets */
+    text-align: center;
+  }
+  .video-title-under h2 {
+    font-size: clamp(22px, 5vw, 34px);
+  }
+}
+</style>
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color:#e9f1ff;">
   <div class="container-fluid">
@@ -339,52 +355,56 @@
           <!-- ===== Section : Programmation PLC ===== -->
            <main>
           <section id="plc" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-            <div class="row align-items-center g-5">
-              <div class="col-md-6">
-                <img src="../../img/Programmazione-2.jpg" alt="Programmation Automates Industriels" class="img-fluid rounded-3 shadow-sm">
-              </div>
-              <div class="col-md-6">
-                <h2 class="fw-bold mb-3 text-primary">Programmation d’automates (PLC)</h2>
-                <p class="lead mb-3">
-                  À la suite d’une analyse détaillée du cahier des charges et de la rédaction de l’analyse fonctionnelle, 
-                  nos ingénieurs développent, configurent et optimisent des programmes d’automates industriels 
-                  pour une large gamme de plateformes : <strong>Siemens (S7, TIA Portal)</strong>, 
-                  <strong>Allen-Bradley (Studio 5000)</strong>, <strong>Schneider Electric (Unity Pro / EcoStruxure)</strong>, 
-                  <strong>Omron</strong> et bien d’autres.
-                </p>
-                <p>
-                  Nous concevons des architectures logicielles fiables et évolutives, adaptées à vos besoins de production : 
-                  gestion des séquences, régulation PID, sécurité machine, traçabilité, communication entre automates 
-                  et intégration avec vos systèmes SCADA ou MES.
-                </p>
-                <ul class="list-unstyled mt-3">
-                  <li><i class="fas fa-check text-primary me-2"></i>Développement de programmes complets et modularisés</li>
-                  <li><i class="fas fa-check text-primary me-2"></i>Mise en réseau des automates et protocoles de communication (Profinet, Modbus, EtherNet/IP…)</li>
-                  <li><i class="fas fa-check text-primary me-2"></i>Tests, validation et documentation technique</li>
-                  <li><i class="fas fa-check text-primary me-2"></i>Formation et transfert de compétences</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+  <div class="row align-items-center g-5">
 
-   
+    <!-- TEXTE (toujours en haut) -->
+    <div class="col-xl-6">
+      <h2 class="fw-bold mb-3 text-primary title-nowrap-desktop">
+        Programmation d’automates (PLC)
+      </h2>
+
+      <p class="lead mb-3">
+        À la suite d’une analyse détaillée du cahier des charges et de la rédaction de l’analyse fonctionnelle, 
+        nos ingénieurs développent, configurent et optimisent des programmes d’automates industriels 
+        pour une large gamme de plateformes :
+        <strong>Siemens (S7, TIA Portal)</strong>,
+        <strong>Allen-Bradley (Studio 5000)</strong>,
+        <strong>Schneider Electric (Unity Pro / EcoStruxure)</strong>,
+        <strong>Omron</strong>.
+      </p>
+
+      <p>
+        Nous concevons des architectures logicielles fiables et évolutives, adaptées à vos besoins de production :
+        gestion des séquences, régulation PID, sécurité machine, traçabilité, communication entre automates 
+        et intégration avec vos systèmes SCADA ou MES.
+      </p>
+
+      <ul class="list-unstyled mt-3">
+        <li><i class="fas fa-check text-primary me-2"></i> Développement de programmes complets et modularisés</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Mise en réseau des automates (Profinet, Modbus, EtherNet/IP…)</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Tests, validation et documentation technique</li>
+        <li><i class="fas fa-check text-primary me-2"></i> Formation et transfert de compétences</li>
+      </ul>
+    </div>
+
+    <!-- IMAGE (toujours en bas) -->
+    <div class="col-xl-6">
+      <img src="../../img/Programmazione-2.jpg"
+           alt="Programmation Automates Industriels"
+           class="img-fluid rounded-3 shadow-sm">
+    </div>
+
+  </div>
+</section>
 
 <!-- ===== CSS ===== -->
 <!-- ================== DCS (intégrée à la page Automatisme) ================== -->
 <section id="DCS" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
   <div class="row align-items-center g-5">
-
-    <!-- IMAGE À DROITE SUR DESKTOP (ordre inversé) -->
-    <div class="col-md-6 order-md-2 wow fadeInRight" data-wow-delay="0.4s">
-      <img src="../../img/Deltav-Panel-1000x658.jpg"
-           alt="Système DCS industriel"
-           class="img-fluid rounded-3 shadow-sm">
-    </div>
-
     <!-- TEXTE À GAUCHE -->
-    <div class="col-md-6 order-md-1 wow fadeInLeft" data-wow-delay="0.2s">
+    <div class="col-xl-6 order-xl-1 ">
 
-      <h2 class="fw-bold mb-3 text-primary title-nowarp-desktop">
+      <h2 class="fw-bold mb-3 text-primary title-nowrap-desktop">
         Système de Contrôle Distribué (DCS)
       </h2>
 
@@ -413,20 +433,19 @@
         offrant une <strong>supervision complète</strong> et une <strong>exploitation simplifiée</strong> de vos installations industrielles.
       </p>
     </div>
-
+<!-- IMAGE À DROITE SUR DESKTOP (ordre inversé) -->
+    <div class="col-xl-6 order-xl-2 ">
+      <img src="../../img/Deltav-Panel-1000x658.jpg"
+           alt="Système DCS industriel"
+           class="img-fluid rounded-3 shadow-sm">
+    </div>
   </div>
 </section>
-
   <!-- ===== Section 2 : HMI / SCADA ===== -->
         <section id="hmi" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
           <div class="row align-items-center g-5 flex-md-row-reverse">
-            <div class="col-md-6">
-              <img src="../../img_GSA/Industrial-Automation-SCADA-System-Solutions.jpg" 
-                   alt="Interfaces opérateur HMI SCADA" 
-                   class="img-fluid rounded-3 shadow-sm">
-            </div>
-            <div class="col-md-6">
-              <h2 class="fw-bold mb-3 text-primary">Supervision et développement d'interfaces opérateur (HMI / SCADA)</h2>
+            <div class="col-xl-6">
+              <h2 class="fw-bold mb-3 text-primary title-nowrap-desktop">Supervision et développement d'interfaces opérateur (HMI / SCADA)</h2>
               <p class="lead mb-3">
                 Nous concevons et développons des interfaces homme-machine (IHM) et systèmes de supervision (SCADA) 
                 intuitifs, performants et ergonomiques pour une exploitation fluide de vos installations industrielles.
@@ -447,28 +466,22 @@
                 <li><i class="fas fa-check text-primary me-2"></i>Alarmes, tendances, historiques et rapports automatisés</li>
               </ul>
             </div>
+              <div class="col-xl-6">
+              <img src="../../img_GSA/Industrial-Automation-SCADA-System-Solutions.jpg" 
+                   alt="Interfaces opérateur HMI SCADA" 
+                   class="img-fluid rounded-3 shadow-sm">
+            </div>
           </div>
         </section>
-
-    
-
 <!-- ===== CSS ===== -->
 
 <!-- ===== Section 3 : (servo/ VFD) - version mobile ===== -->
 <!-- ===== Section 3 : (servo/ VFD) ===== -->
 <section id="servo-vfd" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
   <div class="row align-items-center g-5">
-    
-    <!-- Image à gauche -->
-    <div class="col-md-6">
-      <img src="../../img_GSA/installationelectrique5.jpg" 
-           alt="Servomoteurs et variateurs de vitesse" 
-           class="img-fluid rounded-3 shadow-sm">
-    </div>
-
-    <!-- Texte à droite -->
-    <div class="col-md-6">
-      <h2 class="fw-bold mb-3 text-primary">Intégration de servomoteurs et variateurs de vitesse (VFD)</h2>
+ <!-- Texte à droite -->
+    <div class="col-xl-6">
+      <h2 class="fw-bold mb-3 text-primary title-nowrap-desktop">Intégration de servomoteurs et variateurs de vitesse (VFD)</h2>
 
       <p class="lead mb-3">
         Nos équipes conçoivent, configurent et mettent en service des systèmes de commande motorisée 
@@ -490,6 +503,12 @@
         <li><i class="fas fa-check text-primary me-2"></i>Intégration avec automates et systèmes SCADA</li>
       </ul>
     </div>
+        <!-- Image à gauche -->
+    <div class="col-xl-6">
+      <img src="../../img_GSA/installationelectrique5.jpg" 
+           alt="Servomoteurs et variateurs de vitesse" 
+           class="img-fluid rounded-3 shadow-sm ">
+    </div>
   </div>
 </section>
 
@@ -497,18 +516,9 @@
 <!-- ===== Section 4 : (réseaux) ===== -->
 <section id="reseaux" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
   <div class="row align-items-center g-5 flex-md-row-reverse">
-
-    <!-- Vidéo / image à droite -->
-    <div class="col-md-6">
-      <video class="img-fluid rounded-3 shadow-sm" autoplay muted loop playsinline>
-        <source src="../../videos/reseau.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-      </video>
-    </div>
-
-    <!-- Texte à gauche -->
-    <div class="col-md-6">
-      <h2 class="fw-bold mb-3 text-primary">Intégration de réseaux de communication industriels</h2>
+ <!-- Texte à gauche -->
+    <div class="col-xl-6">
+      <h2 class="fw-bold mb-3 text-primary title-nowrap-desktop">Intégration de réseaux de communication industriels</h2>
 
       <p class="lead mb-3">
         Nous concevons et mettons en œuvre des infrastructures de communication 
@@ -531,23 +541,22 @@
         <li><i class="fas fa-check text-primary me-2"></i>Intégration et supervision réseau dans les environnements SCADA</li>
       </ul>
     </div>
+        <!-- Vidéo / image à droite -->
+    <div class="col-xl-6">
+      <video class="img-fluid rounded-3 shadow-sm" autoplay muted loop playsinline>
+        <source src="../../videos/reseau.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+      </video>
+    </div>
   </div>
 </section>
 
 <!-- ===== Section 5 : Instrumentation ===== -->
 <section id="instrumentation" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
   <div class="row align-items-center g-5">
-
-    <!-- Image à gauche -->
-    <div class="col-md-6">
-      <img src="../../img_GSA/instruments.avif" 
-           alt="Instrumentation et métrologie industrielle" 
-           class="img-fluid rounded-3 shadow-sm">
-    </div>
-
-    <!-- Texte à droite -->
-    <div class="col-md-6">
-      <h2 class="fw-bold mb-3 text-primary">
+<!-- Texte à droite -->
+    <div class="col-xl-6">
+      <h2 class="fw-bold mb-3 text-primary title-nowrap-desktop">
         Instrumentation & Métrologie industrielle
       </h2>
 
@@ -574,6 +583,12 @@
       </ul>
     </div>
 
+    <!-- Image à gauche -->
+    <div class="col-xl-6">
+      <img src="../../img_GSA/instruments.avif" 
+           alt="Instrumentation et métrologie industrielle" 
+           class="img-fluid rounded-3 shadow-sm">
+    </div>
   </div>
 </section>
 
@@ -581,7 +596,7 @@
 <section id="Migration_Revamping" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
   <div class="row g-4">
     <div class="col-12">
-      <h2 class="fw-bold mb-3 text-primary px-0">
+      <h2 class="fw-bold mb-3 text-primary px-0 title-nowrap-desktop">
         Migration & Revamping d’automates et interfaces opérateurs
       </h2>
 
@@ -612,7 +627,7 @@
 
       <div class="row g-4">
   <!-- Colonne 1 : Automates -->
-  <div class="col-md-6">
+  <div class="col-xl-6">
     <h4 class="mt-4">Automates à remplacer :</h4>
     <ul>
       <li>Allen Bradley : PLC2, PLC3, PLC5, SLC100, SLC500…</li>
@@ -629,7 +644,7 @@
   </div>
 
   <!-- Colonne 2 : Interfaces opérateur -->
-  <div class="col-md-6">
+  <div class="col-xl-6">
     <h4 class="mt-4">Interfaces opérateur à remplacer :</h4>
     <ul>
       <li>Allen Bradley : PanelView, ControlView…</li>
@@ -652,19 +667,19 @@
 </section>
 
 <!-- ==================partie 7 : TELEMETRIE ET MONITORING (intégrée à la page Automatisme) ================== -->
-<section id="telemetrie" class="py-5 bg-white rounded-4 shadow-sm px-4 mb-5">
-  <div class="container">
+<section id="telemetrie" class="py-5 bg-white rounded-4 shadow-sm mb-5">
+  <div class="container-fluid">
 
-    <h1 class="display-6 mb-5 text-center">
+    <h1 class="display-6 mb-5 text-center title-nowrap-desktop">
       <strong>Télémétrie & Monitoring Industriel</strong>
     </h1>
 
     <!-- ================== PARTIE 1 : TELEMETRIE ================== -->
 <!-- ================== PARTIE 1 : TELEMETRIE ================== -->
-<div class="row align-items-center g-5 mb-5">
+<div class="row g-5">
 
   <!-- TEXTE À GAUCHE -->
- <div class="col-lg-6 wow fadeInLeft px-0" data-wow-delay="0.2s">
+ <div class="col-xl-6 px-4 ">
     <h3 class="mb-3 text-secondary  ">
       🌐 Télémétrie – Accès distant sécurisé
     </h3>
@@ -694,7 +709,7 @@
   </div>
 
   <!-- CAROUSEL À DROITE -->
-  <div class="col-lg-6 order-md-2 wow fadeInRight" data-wow-delay="0.4s">
+  <div class="col-xl-6">
     <div class="carousel-section">
       <div id="telemetrieCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel">
 
@@ -743,7 +758,7 @@
     <!-- ================== PARTIE 2 : MONITORING ================== -->
     <div class="row align-items-center g-5 mb-5">
       <!-- Texte droite -->
-        <div class="col-lg-6 wow fadeInLeft px-0" data-wow-delay="0.2s">
+        <div class="col-xl-6 px-4">
         <h3 class="mb-3 text-secondary title-nowarp-desktop">📊 Monitoring – Supervision & Analyse</h3>
 
         <p class="lead mb-3">
@@ -767,7 +782,7 @@
       </div>
 
       <!-- Image gauche -->
-      <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.4s">
+      <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.4s">
         <img src="../../img/ivtracer.png" class="img-fluid rounded-4 shadow-sm" alt="Monitoring industriel IVTracer Ignition Aveva Insight">
       </div>
     </div>
@@ -803,22 +818,24 @@
 </section>
 
 <style>
-  /* Supprimer tout espace au-dessus du titre */
-.automatisme-layout {
-  padding-top: 0 !important;
+  .title-nowrap-desktop {
+ font-size: clamp(1.4rem, 2.8vw, 2rem);
+
+  line-height: 1.25;
+
 }
 
-.automatisme-layout h2 {
-  margin-top: 0 !important;
+/* Mobile & tablette */
+@media (max-width: 991.98px) {
+  .title-nowrap-desktop {
+    white-space: normal;
+  }
 }
-/* Couleur homogène pour tout le texte dans la page Automatisme */
-.automatisme-layout p,
-.automatisme-layout li,
-.automatisme-layout .lead,
-.automatisme-layout ul,
-.automatisme-layout span {
-  color: #333 !important;
+
+  .automatisme-layout * {
+  overflow: visible;
 }
+
 
 /* === Section générale === */
 .intro-automatisme {
@@ -830,8 +847,13 @@
 .menu-sticky {
   position: sticky;
   top: 120px;
+  padding-bottom: 20px; /* laisse un espace pour le dernier lien */
 }
 
+.menu-sticky h4 {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 1.3;
+}
 .menu-table-wrapper {
   background: #fff;
   border-radius: 12px;
@@ -856,6 +878,8 @@
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
+   font-size: clamp(0.85rem, 1vw, 1rem);
+  line-height: 1;
 }
 
 .menu-item:hover {
@@ -884,10 +908,7 @@ html {
 /* === Espacement pour le menu à droite === */
 @media (min-width: 992px) {
   .menu-sticky {
-    margin-left: 1.5rem;
-  }
-  .title-nowarp-desktop {
-    white-space: nowrap;
+    margin-left: 0.5rem;
   }
 }
 
@@ -901,9 +922,6 @@ html {
     padding-left: 0;
   }
 }
-
-
-
   /* ---- TITRES ---- */
   section h2 {
     font-size: 1.9rem; /* Taille uniforme pour tous les titres */

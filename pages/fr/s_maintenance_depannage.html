@@ -12,9 +12,8 @@
    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
 
@@ -158,8 +157,8 @@
             <i class="fas fa-globe me-1"></i> Langue
           </a>
           <ul class="dropdown-menu dropdown-menu-end bg-light">
-            <li><a href="/pages/fr/s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> Français</a></li>
-            <li><a href="/pages/en/s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> Anglais</a></li>
+            <li><a href="../../pages/fr/s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> Français</a></li>
+            <li><a href="../../pages/en/s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> Anglais</a></li>
           </ul>
         </li>
 
@@ -438,10 +437,31 @@
 </div>
 
 <style>
+ 
   body, html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+/* ===== Tablet adjustments ===== */
+@media (max-width: 1200px) {
+    body {
+    padding-top: 70px;
+  }
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  .video-section-undernavbar {
+    padding: 50px 5%;
+    justify-content: center; /* center text on tablets */
+    text-align: center;
+  }
+
+  .video-title-under h2 {
+    font-size: clamp(22px, 5vw, 34px);
+  }
 }
 </style>
 <!-- Breadcrumb Start -->

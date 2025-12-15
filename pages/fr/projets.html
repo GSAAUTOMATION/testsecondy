@@ -12,9 +12,8 @@
    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
 
@@ -284,7 +283,34 @@
     <h2>Nos Projets</h2>
   </div>
 </div>
+<style>
+ 
+  body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
+/* ===== Tablet adjustments ===== */
+@media (max-width: 1200px) {
+    body {
+    padding-top: 70px;
+  }
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  .video-section-undernavbar {
+    padding: 50px 5%;
+    justify-content: center; /* center text on tablets */
+    text-align: center;
+  }
+
+  .video-title-under h2 {
+    font-size: clamp(22px, 5vw, 34px);
+  }
+}
+</style>
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
   <div class="container">
@@ -435,24 +461,6 @@
           </div>
         </div>
       </div>
-<!-- Projet 4 : Modernisation Système Métro -->
- <!-- 
-<div class="project-card col-lg-4 col-md-6" data-category="transport">
-  <div class="project-item h-100 border border-primary p-1 rounded-3 bg-white shadow-sm d-flex flex-column">
-    <div class="project-img position-relative overflow-hidden rounded-3">
-      <img src="../../img/metro.webp" class="img-fluid w-100" alt="Modernisation du système de commande des ponts roulants du métro">
-      <div class="project-overlay d-flex align-items-center justify-content-center">
-        <a href="projets_metro.html" class="btn btn-primary">Voir le projet</a>
-      </div>
-    </div>
-    <div class="text-center py-3 flex-grow-1">
-      <h5 class="mb-1">Modernisation Système – Métro-Europe</h5>
-      <p class="mb-0">
-       Mise à niveau du système d’exploitation des ponts roulants du métro.
-      </p>
-    </div>
-  </div>
-</div>-->
 <!-- Projet 5 : Modernisation Silos CEFM -->
 <div class="project-card col-lg-4 col-md-6" data-category="agro">
   <div class="project-item h-100 border border-success p-1 rounded-3 bg-white shadow-sm d-flex flex-column">
@@ -484,7 +492,7 @@
 
     <!-- Texte -->
     <div class="text-center py-3 flex-grow-1">
-      <h5 class="mb-1">Projets d’automatisation et de mise en service dans l’industrie pharmaceutique et Biotechnique.</h5>
+      <h5 class="mb-1">Projets d’automatisation et de mise en service dans l’industrie pharmaceutique et Biotechnique</h5>
       <p class="mb-0">
         Ce projet regroupe plusieurs réalisations menées dans le secteur pharmaceutique et biotechnologique, visant à moderniser et optimiser les systèmes de production à travers des solutions d’automatisation avancées.
       </p>
@@ -494,29 +502,147 @@
 </div>
 </div>
 </section>
-<!-- Projet 7 : Stilmas Eau Purifiée -->
- <!--
-<div class="project-card col-lg-4 col-md-6" data-category="pharma">
-  <div class="project-item h-100 border border-primary p-1 rounded-3 bg-white shadow-sm d-flex flex-column">
-    <div class="project-img position-relative overflow-hidden rounded-3">
-      <img src="./img_projets/stilmas.jpg" class="img-fluid w-100" alt="Modernisation panneau électrique – Système d'eau purifiée Stilmas">
-      <div class="project-overlay d-flex align-items-center justify-content-center">
-        <a href="projects_stilmas.html" class="btn btn-primary">Voir le projet</a>
-      </div>
-    </div>
-    <div class="text-center py-3 flex-grow-1">
-      <h5 class="mb-1">Modernisation Panneau Électrique – Stilmas</h5>
-      <p class="mb-0">
-        Modernisation du panneau électrique et programmation du système d’eau purifiée, pour améliorer fiabilité, automatisation et conformité pharmaceutique.
-      </p>
-    </div>
-  </div>
-</div>
 
-    </div>
-  </div>
-</section>-->
 <!-- ===================== End Expertise Content ===================== -->
+
+<style>
+/* ===============================
+   GRID PROJETS – STYLE MODERNE
+================================ */
+
+/* Carte globale */
+.project-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  background: #fff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover carte */
+.project-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   IMAGE
+================================ */
+.project-img {
+  position: relative;
+  height: 230px; /* 🔥 même hauteur pour toutes */
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Zoom image au hover */
+.project-item:hover .project-img img {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   OVERLAY
+================================ */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.75)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay .btn {
+  border-radius: 999px;
+  padding: 10px 26px;
+  font-weight: 600;
+}
+
+/* ===============================
+   TEXTE
+================================ */
+.project-item h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0b2b55;
+}
+
+.project-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.55;
+  margin-top: 6px;
+
+  /* Limiter à 3 lignes */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===============================
+   ALIGNEMENT
+================================ */
+.project-item .text-center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 992px) {
+  .project-img {
+    height: 200px;
+  }
+  /* Désactiver overlay */
+    .project-overlay {
+    opacity: 1;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.05)
+    );
+  }
+
+  .project-overlay .btn {
+    margin-top: auto;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .project-img {
+    height: 180px;
+  }
+
+  .project-item h5 {
+    font-size: 1rem;
+  }
+
+  .project-item p {
+    font-size: 0.9rem;
+  }
+}
+
+</style>
 
 <script>
   // Filter logic
