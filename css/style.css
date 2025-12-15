@@ -755,7 +755,7 @@ VIDEO - SECTION
 .about .about-item-image {
     position: relative;
     background: var(--bs-light);
-    background-image: url(img_GSA/alim.jpeg);
+    background-image: url(../img_GSA/alim.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
