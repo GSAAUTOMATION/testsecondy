@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Projet - GSA</title>
+    <title>Projet : Station GNL automatisée pour camions - GSA Automation</title>
     <link rel="icon" type="image/svg+xml" href="../../img/logo-gsa-modified.svg">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -12,7 +12,7 @@
    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
 
@@ -156,8 +156,8 @@
             <i class="fas fa-globe me-1"></i> Langue
           </a>
           <ul class="dropdown-menu dropdown-menu-end bg-light">
-            <li><a href="../../pages/fr/projets_mourmelon.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> Français</a></li>
-            <li><a href="../../pages/en/projets_mourmelon.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> Anglais</a></li>
+            <li><a href="../../pages/fr/projet_Station_GNL_automatisée.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> Français</a></li>
+            <li><a href="../../pages/en/Automated_LNG_Station_project.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> Anglais</a></li>
           </ul>
         </li>
 
@@ -210,43 +210,6 @@
   }
 }
 
-.brochure-panel-mobile {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;       /* moins d'espace entre les boutons */
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px;   /* padding réduit */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-.brochure-panel-mobile .title {
-  font-size: 14px; /* titre légèrement plus petit */
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.download-btn {
-  display: flex;
-  align-items: center;
-  background: #ff6600;
-  color: #fff;
-  padding: 8px;   /* padding réduit */
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 0.25s ease;
-}
-
-.download-btn:hover {
-  background: #e05500;
-  transform: translateY(-1px);
-}
-
-.download-btn img {
-  display: block;
-}
   </style>
 </body>
     <!--<script>
@@ -280,8 +243,8 @@
 
   <!-- Title overlay -->
   <div class="video-title-under">
-    <h4>NOS Projets</h4>
-    <h2>Remplacement de l’ancienne chaufferie charbon/fioul par biomasse/GNL </h2>
+    <h4>Nos projets</h4>
+      <h2>Station GNL automatisée pour camions</h2>
   </div>
 </div>
 <style>
@@ -315,39 +278,86 @@
 <!-- Breadcrumb Start -->
 <nav aria-label="breadcrumb" class="py-3" style="background-color: #e9f1ff;">
   <div class="container-fluid">
-    <ol class="breadcrumb mb-0 breadcrumb-nowrap">
+    <ol class="breadcrumb mb-0 breadcrumb-nowrap1">
       <li class="breadcrumb-item">
         <a href="index.html" class="breadcrumb-link">Accueil</a>
       </li>
       <li class="breadcrumb-item">
         <a href="projets.html" class="breadcrumb-link">Nos Projets</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">chaufferie biomasse/GNL</li>
+      <li class="breadcrumb-item active" aria-current="page">Station GNL automatisée pour camions</li>
     </ol>
   </div>
 </nav>
 <!-- Breadcrumb End -->
+
+<style>
+  /* ============================= */
+/* BREADCRUMB SANS RETOUR LIGNE */
+/* ============================= */
+.breadcrumb-nowrap1 {
+  white-space: nowrap;        /* interdit le retour à la ligne */
+  overflow: hidden;           /* évite débordement */
+  text-overflow: ellipsis;    /* ... si trop long */
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Optionnel : garder les items collés */
+.breadcrumb-item {
+  white-space: nowrap;
+}
+
+/* Supprime le double slash Bootstrap et garde un seul */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: #6c757d;
+}
+
+/* Style des liens du breadcrumb */
+.breadcrumb-link {
+  color: #007bff; /* bleu GSA Automation */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Effet hover : changement de couleur + soulignement animé */
+.breadcrumb-link:hover {
+  color:#001659 ; /* bleu plus foncé */
+  text-decoration: underline;
+  text-underline-offset: 4px; /* espace entre le texte et le soulignement */
+}
+
+/* Dernier élément actif (page courante) */
+.breadcrumb-item.active {
+  color: #212529;
+  font-weight: 600;
+}
+.breadcrumb { font-size: clamp(9.8px, 2.5vw, 18px); }
+
+/* Media query pour les petits écrans */
+
+</style>
 <!-- Projet Détail Start -->
 <section class="project-detail py-5 bg-light">
   <div class="container py-5">
 
     <!-- En-tête du projet -->
     <div class="text-center mb-5">
-      <img class="icon-title mb-3" src="https://www.segitec.net/wp-content/uploads/2021/12/CEAFEE9B-AA3E-4BF7-A6E6-16A681A26B11.png" alt="ENGIE Mourmelon" style="max-width:80px;">
-      <h1 class="display-5 fw-bold mb-3">Projet clé en main – Remplacement de la chaufferie charbon/fioul par une solution mixte biomasse et GNL</h1>
+      <h1 class="display-5 fw-bold mb-3">Station GNL automatisée pour camions – Pologne</h1>
       <p class="text-secondary fs-5 mb-0">
-        Client : <strong>Leader mondial de l’énergie</strong> | Année : <strong>2023</strong> | Secteur : <strong>Énergie & Chauffage industriel</strong>
+        Client : <strong>Acteur privé du secteur du transport et de la logistique</strong> | Année : <strong>2022</strong> | Secteur : <strong>Énergie & Transpot</strong>
       </p>
-      <p class="text-muted">Lieu : <strong>Grand Est, France</strong></p>
+      <p class="text-muted">Lieu : <strong>Pologne</strong></p>
     </div>
 
     <!-- Description du projet -->
     <div class="project-description mb-5">
       <h4 class="text-secondary mb-3">Description du projet</h4>
       <p>
-        Le projet s’inscrit dans le cadre du <strong>Contrat de Performance Énergétique (CPE)</strong> en France. 
-        Il vise à remplacer l’ancienne chaufferie charbon/fioul par une installation mixte <strong>biomasse / GNL</strong>, 
-        s’inscrivant dans une démarche globale de <strong>décarbonation</strong> et d’<strong>efficacité énergétique</strong>.
+        Projet clé en main comprenant la <strong>conception</strong>, la <strong>fabrication</strong>, l'<strong>installation</strong> et la <strong>mise en service</strong> d’une station GNL automatisée pour camions. 
+        La solution intègre des systèmes d’automatisme avancés pour le contrôle des réservoirs, pompes, sécurité et interface utilisateur, ainsi qu’un système de supervision <strong>SCADA</strong> pour la gestion complète à distance.
       </p>
     </div>
 
@@ -356,57 +366,45 @@
 
     <!-- Phases du projet -->
     <div class="project-phases mb-5">
-      <h4 class="text-secondary mb-3">Phases du projet</h4>
-      <ul class="list-unstyled">
-        <li>✅ Étude et analyse détaillée du cahier des charges</li>
-        <li>✅ Préparation, validation et fourniture des documents techniques d’entrée (plans 3D, schémas électriques et pneumatiques, P&ID, etc.)</li>
-        <li>✅ Suivi de la conception et de la fabrication des matériels et équipements cryogéniques par notre fournisseur basé en Turquie (réservoir GNL 30 m³, skids, vaporiseurs, odoriseurs…)</li>
-        <li>✅ Conception et intégration du système d’automatisme pour la gestion complète de la chaufferie (chaudières, cuve GNL, vaporiseurs, sécurité…)</li>
-        <li>✅ Développement du système de supervision <strong>SCADA</strong> pour la visualisation, le suivi énergétique et la gestion des alarmes</li>
-        <li>✅ Mise en place d’un système de <strong>télémétrie</strong> pour le contrôle et la gestion à distance</li>
-        <li>✅ Validation des travaux de génie civil sur site selon le plan fourni par GSA Automation</li>
-        <li>✅ Réalisation des <strong>tests FAT (Factory Acceptance Test)</strong> en atelier</li>
-        <li>✅ Gestion complète du transport des matériels depuis le fabricant jusqu’au client final</li>
-        <li>✅ Suivi douanier, réception et déchargement des matériels sur site</li>
-        <li>✅ Préparation et coordination du démarrage des travaux d’installation</li>
-        <li>✅ Installation complète des équipements et de la tuyauterie</li>
-        <li>✅ Installation électrique : raccordements, alimentation TGBT, instrumentation et automatisme</li>
-        <li>✅ Réalisation des <strong>tests SAT (Site Acceptance Test)</strong> sur site</li>
-        <li>✅ Réglages, calibrages et ajustements finaux</li>
-        <li>✅ Formation du personnel d’exploitation</li>
-        <li>✅ Réception finale du projet et fourniture des livrables</li>
-        <li>✅ Assistance technique et maintenance de l’installation dans le cadre du contrat client</li>
-      </ul>
-    </div>
+  <h4 class="text-secondary mb-3">Phases du projet</h4>
+  <ul class="list-unstyled">
+    <li>✅ Étude et analyse détaillée du cahier des charges.</li>
+    <li>✅ Préparation, validation et fourniture des documents techniques d’entrée (plans 3D, schémas électriques et pneumatiques, P&ID, etc.).</li>
+    <li>✅ Conception, intégration et développement de la partie automatisme (<strong>PLC, IHM, SCADA</strong>).</li>
+    <li>✅ Suivi de fabrication des équipements de station (skids, réservoirs, dispensers, etc.) chez notre fabricant.</li>
+    <li>✅ Mise en place de la <strong>télémétrie</strong> pour supervision et maintenance à distance.</li>
+    <li>✅ Réalisation des <strong>tests FAT</strong> (Factory Acceptance Test) en atelier.</li>
+    <li>✅ Organisation du transport, dédouanement et réception des matériels.</li>
+    <li>✅ Installation sur site client.</li>
+    <li>✅ Réalisation des <strong>tests SAT</strong>, réglages et formation des équipes.</li>
+    <li>✅ Réception finale du projet et remise des livrables.</li>
+    <li>✅ Assistance technique et maintenance .</li>
+  </ul>
+</div>
 
-    <!-- Carousel 16 photos -->
+
+    <!-- Carousel photos -->
     <div class="carousel-section mb-5">
-      <div id="carouselMourmelon" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+      <div id="carouselLipinski" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <!-- Photo 1 -->
-          <div class="carousel-item active">
-            <img src="../../img/mourmelon.jpg" class="d-block w-100 carousel-img" alt="Photo 1">
-          </div>
-          <!-- Photos 2 à 16 -->
-          <div class="carousel-item"><img src="../../img_projets/m3D.JPG" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/m3D_1.png" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/m3D_2.jpeg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/meng.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/mreservoir.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/mreservoir1.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/m17.jpeg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/m18.jpeg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/marmoire.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/minstrument.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-          <div class="carousel-item"><img src="../../img_projets/m12.JPG" class="d-block w-100 carousel-img" alt="Photo 3"></div>
-           </div>
+          <div class="carousel-item active"><img src="../../img_projets/lipinskiprincipal.JPG" class="d-block w-100 carousel-img" alt="Photo 1"> </div>
+          <div class="carousel-item"><img src="../../img_projets/lipinskistation.jpg" class="d-block w-100 carousel-img" alt="Photo 1"></div>
+          <div class="carousel-item"><img src="../../img_projets/lipinski1.jpg" class="d-block w-100 carousel-img" alt="Photo 3"></div>
+          <div class="carousel-item"><img src="../../img_projets/lipinski_armoire.jpg" class="d-block w-100 carousel-img" alt="Photo 5"></div>
+          <div class="carousel-item"><img src="../../img_projets/lipinskispenserhmi.JPG" class="d-block w-100 carousel-img" alt="Photo 6"></div>
+          <div class="carousel-item"><img src="../../img_projets/lipinski_hmi.jpg" class="d-block w-100 carousel-img" alt="Photo 8"></div>
+          <div class="carousel-item"><img src="../../img_projets/lipinski_scada.JPG" class="d-block w-100 carousel-img" alt="Photo 9"></div>
+          <div class="carousel-item"><img src="../../img_projets/lipinskip.jpg" class="d-block w-100 carousel-img" alt="Photo 10"></div>
+
+          <!-- Ajoute plus de photos si nécessaire -->
+        </div>
 
         <!-- Boutons flèches -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMourmelon" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLipinski" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
           <span class="visually-hidden">Précédent</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMourmelon" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLipinski" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
           <span class="visually-hidden">Suivant</span>
         </button>
@@ -442,63 +440,65 @@
 }
 
 /* Carousel desktop */
-.carousel-section #carouselMourmelon {
+.carousel-section #carouselLipinski {
   max-width: 800px;
   height: 400px;
   margin: auto;
 }
-.carousel-section #carouselMourmelon .carousel-inner,
-.carousel-section #carouselMourmelon .carousel-item {
+.carousel-section #carouselLipinski .carousel-inner,
+.carousel-section #carouselLipinski .carousel-item {
   height: 100%;
 }
-.carousel-section #carouselMourmelon .carousel-img {
+.carousel-section #carouselLipinski .carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #000; /* optionnel pour bandes noires */
   animation: none !important;
 }
 /* Supprimer overlay sombre */
-.carousel-section #carouselMourmelon .carousel-item::after {
+.carousel-section #carouselLipinski .carousel-item::after {
   content: none !important;
   background: none !important;
 }
 /* Boutons flèches */
-.carousel-section #carouselMourmelon .carousel-control-prev,
-.carousel-section #carouselMourmelon .carousel-control-next {
+.carousel-section #carouselLipinski .carousel-control-prev,
+.carousel-section #carouselLipinski .carousel-control-next {
   width: 5%;
   top: 50%;
   transform: translateY(-50%);
   background: none;
 }
-.carousel-section #carouselMourmelon .carousel-control-prev-icon,
-.carousel-section #carouselMourmelon .carousel-control-next-icon {
+.carousel-section #carouselLipinski .carousel-control-prev-icon,
+.carousel-section #carouselLipinski .carousel-control-next-icon {
   background-color: orange;
   border-radius: 50%;
 }
 
 /* Responsive mobile */
 @media (max-width: 992px) {
-  .carousel-section #carouselMourmelon {
+  .carousel-section #carouselLipinski {
     height: 270px;
     max-width: 100%;
   }
-  .carousel-section #carouselMourmelon .carousel-inner,
-  .carousel-section #carouselMourmelon .carousel-item,
-  .carousel-section #carouselMourmelon .carousel-img {
+  .carousel-section #carouselLipinski .carousel-inner,
+  .carousel-section #carouselLipinski .carousel-item,
+  .carousel-section #carouselLipinski .carousel-img {
     height: 270px;
   }
-  .carousel-section #carouselMourmelon .carousel-control-prev,
-  .carousel-section #carouselMourmelon .carousel-control-next {
+  .carousel-section #carouselLipinski .carousel-control-prev,
+  .carousel-section #carouselLipinski .carousel-control-next {
     width: 10%;
   }
-  .carousel-section #carouselMourmelon .carousel-control-prev-icon,
-  .carousel-section #carouselMourmelon .carousel-control-next-icon {
+  .carousel-section #carouselLipinski .carousel-control-prev-icon,
+  .carousel-section #carouselLipinski .carousel-control-next-icon {
     width: 35px;
     height: 35px;
     background-color: rgba(255,165,0,0.9);
   }
 }
 </style>
+
 
 
 
