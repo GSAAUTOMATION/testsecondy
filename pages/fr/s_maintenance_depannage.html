@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Service : Maintenance & Dépannage - GSA Automation</title>
-    <link rel="icon" type="image/svg+xml" href="../../img/logo-gsa-modified.svg">
+    <title> Maintenance & Dépannage - GSA Automation</title>
+    <link rel="icon" type="image/svg+xml"  href="../../img/logo-gsa-modified.svg">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -12,8 +12,7 @@
    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
 
@@ -39,7 +38,7 @@
 </head>
 
 
-
+<body>
 
     <!-- Spinner Start -->
     <div id="spinner" class="show">
@@ -97,7 +96,7 @@
 </div>
 <!-- Topbar End -->
 
- <!-- Navbar & Hero Start -->
+  <!-- Navbar & Hero Start -->
 <div class="container-fluid sticky-top px-0">
   <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
     <a href="index" class="navbar-brand p-0">
@@ -114,72 +113,93 @@
     <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-        <li class="nav-item"><a href="index" class="nav-link">Accueil</a></li>
-        <li class="nav-item"><a href="a_propos" class="nav-link">À Propos</a></li>
+       <li class="nav-item"><a href="index" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="About_us" class="nav-link">About us</a></li>
 
-    <!-- Dropdown Services -->
+<!-- Dropdown Services -->
 <li class="nav-item dropdown">
-  <!-- Version mobile : bouton + / - -->
+
+  <!-- Mobile version: text + + / - button -->
   <div class="d-flex align-items-center justify-content-between d-lg-none">
     <a href="index#services" class="nav-link active2" data-scroll="#services">Services</a>
     <button class="btn btn-sm toggle-btn">+</button>
   </div>
 
-  <!-- Version desktop : dropdown classique -->
-  <a href="index#services" class="nav-link active2 d-none d-lg-block dropdown-toggle" data-bs-toggle="dropdown" data-scroll="#services">Services</a>
+  <!-- Desktop version: classic dropdown -->
+  <a href="index#services"
+     class="nav-link active2 d-none d-lg-block dropdown-toggle"
+     data-bs-toggle="dropdown"
+     data-scroll="#services">
+    Services
+  </a>
 
   <!-- Dropdown menu -->
- <ul class="dropdown-menu bg-light">
-  <li><a href="s_automatisme" class="dropdown-item fw-semibold text-dark py-2 px-3">Automatisme & Contrôle-Commande</a></li>
-  <li><hr class="dropdown-divider"></li>
+  <ul class="dropdown-menu bg-light">
+    
+    <li><a href="s_automatisme" class="dropdown-item fw-semibold text-dark py-2 px-3">
+     Automatisme & Contrôle-Commande
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
 
-  <li><a href="s_installation" class="dropdown-item fw-semibold text-dark py-2 px-3">Installation & Mise en service</a></li>
-  <li><hr class="dropdown-divider"></li>
+    <li><a href="s_installation" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Installation & Mise en service
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
 
-  <li><a href="s_ingenerie" class="dropdown-item fw-semibold text-dark py-2 px-3">Ingénierie et études techniques</a></li>
-  <li><hr class="dropdown-divider"></li>
+    <li><a href="s_ingenerie" class="dropdown-item fw-semibold text-dark py-2 px-3">
+      Ingénierie & Études Techniques
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
 
-  <li><a href="s_maintenance_depannage" class="dropdown-item fw-semibold text-dark py-2 px-3">Maintenance & Dépannage</a></li>
-  <li><hr class="dropdown-divider"></li>
+    <li><a href="s_maintenance_depannage" class="dropdown-item fw-semibold text-dark py-2 px-3">
+     Maintenance & Dépannage
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
 
-  <li><a href="s_process" class="dropdown-item fw-semibold text-dark py-2 px-3">Fabrication et Installation d’ensembles Process</a></li>
-  <li><hr class="dropdown-divider"></li>
+    <li><a href="s_process" class="dropdown-item fw-semibold text-dark py-2 px-3">
+Fabrication et Installation d’ensembles Process
+    </a></li>
+    <li><hr class="dropdown-divider"></li>
 
-  <li><a href="s_GTC" class="dropdown-item fw-semibold text-dark py-2 px-3">Gestion technique des bâtiments(GTB/GTC)</a></li>
-</ul>
+    <li><a href="s_GTC" class="dropdown-item fw-semibold text-dark py-2 px-3">
+Gestion Technique du Bâtiment (GTB/GTC)
+    </a></li>
+
+  </ul>
 </li>
-        <li class="nav-item"><a href="index#secteurs" class="nav-link">Nos secteurs</a></li>
-        <li class="nav-item"><a href="projets" class="nav-link">Nos Projets</a></li>
 
-        <!-- Langue -->
-        <li class="nav-item dropdown">
-          <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-            <i class="fas fa-globe me-1"></i> Langue
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end bg-light">
-            <li><a href="../../pages/fr/s_maintenance_depannage" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> Français</a></li>
-            <li><a href="../../pages/en/s_maintenance_depannage" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> Anglais</a></li>
-          </ul>
-        </li>
+<li class="nav-item"><a href="index#secteurs" class="nav-link">Nos Secteurs</a></li>
+<li class="nav-item"><a href="projects" class="nav-link">Nos Projets</a></li>
 
-        <li class="nav-item">
-          <a href="contact" class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0">Contactez-Nous</a>
-        </li>
-      </ul>
+<!-- Language -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+    <i class="fas fa-globe me-1"></i> Langue
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end bg-light">
+    <li><a href="../../pages/fr/s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> French</a></li>
+    <li><a href="../../pages/en/s_maintenance_depannage.html" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> English</a></li>
+  </ul>
+</li>
+
+<li class="nav-item">
+  <a href="contact" class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0">Contactez-Nous</a>
+</li>
+</ul>
 <!-- Brochure Widget Mobile -->
 <li class="nav-item d-lg-none mt-1" style="list-style: none;">
   <div class="brochure-widget-mobile">
     <div class="brochure-panel-mobile">
-      <h4 class="title">Télécharger notre brochure</h4>
+      <h4 class="title">Download Our Brochure</h4>
 
       <div class="download-buttons d-flex gap-2">
         <a href="../../docs/Brochure GSA Automation FR.pdf" class="download-btn d-flex align-items-center" download>
           <img src="../../img/Brochure.jpg" alt="Brochure FR" class="me-1" style="height:30px; width:auto; border-radius:4px;">
-          <span>En Français</span>
+          <span>French Version</span>
         </a>
         <a href="../../docs/Brochure GSA Automation EN.pdf" class="download-btn d-flex align-items-center" download>
           <img src="../../img/Brochure_1.jpg" alt="Brochure EN" class="me-1" style="height:30px; width:auto; border-radius:4px;">
-          <span>En Anglais</span>
+          <span>English Version</span>
         </a>
       </div>
     </div>
@@ -200,7 +220,7 @@
     </div>
   </nav>
 </div>
-  <!-- 🔹 Overlay ajouté ici -->
+<!-- 🔹 Overlay ajouté ici -->
 <div class="nav-overlay" id="navOverlay"></div>
 <style>
 @media (max-width: 991.98px) {
@@ -210,7 +230,6 @@
        /* bouton pleine largeur si tu veux */
   }
 }
-
 .brochure-panel-mobile {
   display: flex;
   flex-direction: column;
@@ -249,180 +268,7 @@
   display: block;
 }
   </style>
-<!-- CSS -->
-<!--<style>
-/* === Toggler moderne === */
-/***.navbar-toggler {
-  border: none !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1050;
-}
-.toggler-icon {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #001659;
-  border-radius: 2px;
-  transition: all 0.4s ease-in-out;
-  transform-origin: 1px;
-}
-.navbar-toggler.collapsed span:nth-child(1) { transform: rotate(0) translateY(0); }
-.navbar-toggler.collapsed span:nth-child(2) { opacity: 1; }
-.navbar-toggler.collapsed span:nth-child(3) { transform: rotate(0) translateY(0); }
-.navbar-toggler:not(.collapsed) span:nth-child(1) { transform: rotate(45deg); }
-.navbar-toggler:not(.collapsed) span:nth-child(2) { opacity: 0; }
-.navbar-toggler:not(.collapsed) span:nth-child(3) { transform: rotate(-45deg); }
-
-/* === Dropdown moderne === */
-/***.dropdown-menu {
-  border: none;
-  border-radius: 12px;
-  padding: 0; 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  animation: dropdownFade 0.3s ease forwards;
-  transform-origin: top center;
-  overflow: hidden;
-}
-@keyframes dropdownFade {
-  0% { opacity: 0; transform: translateY(10px) scale(0.95); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
-.dropdown-item {
-  font-weight: 500;
-  padding: 10px 18px;
-  border-radius: 0;
-  border-bottom: 1px solid #eee; 
-  transition: all 0.3s ease;
-}
-.dropdown-item:last-child {
-  border-bottom: none; 
-}
-.dropdown-item:hover {
-  background-color: #001659;
-  color: #fff !important;
-  transform: translateX(4px);
-}
-
-/* === Version mobile uniquement === */
-/***@media (max-width: 991px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: -100%; 
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    padding: 2rem 1rem;
-    transition: left 0.4s ease;
-    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
-    z-index: 1050;
-  }
-  .navbar-collapse.show {
-    left: 0; /* slide in */
-  }
-
-  /* liens du menu */
-  /***.navbar-nav {
-    width: 100%;
-  }
-
-  .navbar-nav .nav-item {
-    border-bottom: 1px solid #eee; 
-  }
-  .navbar-nav .nav-item:last-child {
-    border-bottom: none;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.1rem;
-    padding: 12px 0;
-    color: #001659;
-  }
-  .navbar-nav .nav-link:hover {
-    color: #fff;
-    background: #001659;
-    border-radius: 6px;
-    padding-left: 10px;
-  }
-
-  /* dropdown bien contenu (pas de décalage) */
-  /***.dropdown-menu {
-    position: static !important;
-    inset: unset !important;
-    transform: none !important;
-    margin: 0;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
-
-  .dropdown-item {
-    white-space: normal;
-    font-size: 1rem;
-    padding: 12px 15px;
-    border-bottom: 1px solid #eee  !important ; 
-  }
-  .dropdown-item:last-child {
-    border-bottom: none;
-  }
-
-  /* icônes sociales en bas */
-  /***.mobile-social {
-    margin-top: auto;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eee;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  .mobile-social a {
-    font-size: 1.5rem;
-    transition: transform .3s;
-  }
-  .mobile-social a:hover {
-    transform: scale(1.2);
-  }
-}
-</style>-->
-
- </body>
-
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-            const currentUrl = window.location.href;
-
-            navLinks.forEach(link => {
-                // Mark as active if href matches current full URL
-                if (link.href === currentUrl) {
-                    link.classList.add("active");
-                }
-
-                // Handle click events
-                link.addEventListener("click", function () {
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-                    this.classList.add("active");
-                });
-            });
-        });
-    </script> -->
-
-    <!-- Navbar & Hero End -->
- <!-- ====== Video Section ====== -->
-<!-- ====== Video Section ====== -->
+</body>
 <div class="video-section-undernavbar">
   <video autoplay muted loop playsinline>
     <source src="../../videos/videobackground.mp4" type="video/mp4">
@@ -432,16 +278,17 @@
   <!-- Title overlay -->
   <div class="video-title-under">
     <h4>Nos Services</h4>
-    <h2>Maintenance et dépannage</h2>
-  </div>
+    <h2>Maintenance & Dépannage</h2>
 </div>
-
+</div>
 <style>
+ 
   body, html {
   
   margin: 0;
   padding: 0;
 }
+
 /* ===== Tablet adjustments ===== */
 @media (max-width: 1200px) {
     body {
@@ -467,12 +314,12 @@
   <div class="container-fluid">
     <ol class="breadcrumb mb-0 breadcrumb-nowrap">
       <li class="breadcrumb-item">
-        <a href="index" class="breadcrumb-link">Accueil</a>
+        <a href="index" class="breadcrumb-link">Acceuil</a>
       </li>
       <li class="breadcrumb-item">
         <a href="index#services" class="breadcrumb-link">Services</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Maintenance et dépannage</li>
+      <li class="breadcrumb-item active" aria-current="page">Maintenance & Dépannage</li>
     </ol>
   </div>
 </nav>
