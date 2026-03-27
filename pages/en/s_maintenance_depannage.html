@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Maintenance & Troubleshooting Services - GSA Automation</title>
+    <title>Installation & Commissioning - GSA Automation</title>
     <link rel="icon" type="image/svg+xml"  href="../../img/logo-gsa-modified.svg">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -41,9 +41,10 @@
 <body>
 
     <!-- Spinner Start -->
-   <!--  <div id="spinner" class="show">
+    <div id="spinner" class="show">
         <img src="../../img/logo-gsa-modified.svg" alt="Loading..." id="logo-spinner" />
-    </div> -->
+    </div>
+
 <body class="page"> 
 <!-- Topbar Start -->
 <div class="container-fluid topbar d-none d-xl-block w-100">
@@ -94,8 +95,8 @@
     </div>
 </div>
 <!-- Topbar End -->
- 
- <!-- Navbar & Hero Start -->
+
+  <!-- Navbar & Hero Start -->
 <div class="container-fluid sticky-top px-0">
   <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
     <a href="index" class="navbar-brand p-0">
@@ -176,8 +177,8 @@
     <i class="fas fa-globe me-1"></i> Language
   </a>
   <ul class="dropdown-menu dropdown-menu-end bg-light">
-    <li><a href="../../pages/fr/s_maintenance_depannage" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> French</a></li>
-    <li><a href="../../pages/en/s_maintenance_depannage" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> English</a></li>
+    <li><a href="../../pages/fr/s_installation" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-fr me-2"></span> French</a></li>
+    <li><a href="../../pages/en/s_installation" class="dropdown-item fw-semibold text-dark py-2 px-3"> <span class="fi fi-gb me-2"></span> English</a></li>
   </ul>
 </li>
 
@@ -268,181 +269,6 @@
 }
   </style>
 </body>
-
-<!-- CSS -->
-<!--<style>
-/* === Toggler moderne === */
-/***.navbar-toggler {
-  border: none !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1050;
-}
-.toggler-icon {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #001659;
-  border-radius: 2px;
-  transition: all 0.4s ease-in-out;
-  transform-origin: 1px;
-}
-.navbar-toggler.collapsed span:nth-child(1) { transform: rotate(0) translateY(0); }
-.navbar-toggler.collapsed span:nth-child(2) { opacity: 1; }
-.navbar-toggler.collapsed span:nth-child(3) { transform: rotate(0) translateY(0); }
-.navbar-toggler:not(.collapsed) span:nth-child(1) { transform: rotate(45deg); }
-.navbar-toggler:not(.collapsed) span:nth-child(2) { opacity: 0; }
-.navbar-toggler:not(.collapsed) span:nth-child(3) { transform: rotate(-45deg); }
-
-/* === Dropdown moderne === */
-/***.dropdown-menu {
-  border: none;
-  border-radius: 12px;
-  padding: 0; 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  animation: dropdownFade 0.3s ease forwards;
-  transform-origin: top center;
-  overflow: hidden;
-}
-@keyframes dropdownFade {
-  0% { opacity: 0; transform: translateY(10px) scale(0.95); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
-.dropdown-item {
-  font-weight: 500;
-  padding: 10px 18px;
-  border-radius: 0;
-  border-bottom: 1px solid #eee; 
-  transition: all 0.3s ease;
-}
-.dropdown-item:last-child {
-  border-bottom: none; 
-}
-.dropdown-item:hover {
-  background-color: #001659;
-  color: #fff !important;
-  transform: translateX(4px);
-}
-
-/* === Version mobile uniquement === */
-/***@media (max-width: 991px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: -100%; 
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    padding: 2rem 1rem;
-    transition: left 0.4s ease;
-    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
-    z-index: 1050;
-  }
-  .navbar-collapse.show {
-    left: 0; /* slide in */
-  }
-
-  /* liens du menu */
-  /***.navbar-nav {
-    width: 100%;
-  }
-
-  .navbar-nav .nav-item {
-    border-bottom: 1px solid #eee; 
-  }
-  .navbar-nav .nav-item:last-child {
-    border-bottom: none;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.1rem;
-    padding: 12px 0;
-    color: #001659;
-  }
-  .navbar-nav .nav-link:hover {
-    color: #fff;
-    background: #001659;
-    border-radius: 6px;
-    padding-left: 10px;
-  }
-
-  /* dropdown bien contenu (pas de décalage) */
-  /***.dropdown-menu {
-    position: static !important;
-    inset: unset !important;
-    transform: none !important;
-    margin: 0;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
-
-  .dropdown-item {
-    white-space: normal;
-    font-size: 1rem;
-    padding: 12px 15px;
-    border-bottom: 1px solid #eee  !important ; 
-  }
-  .dropdown-item:last-child {
-    border-bottom: none;
-  }
-
-  /* icônes sociales en bas */
-  /***.mobile-social {
-    margin-top: auto;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eee;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  .mobile-social a {
-    font-size: 1.5rem;
-    transition: transform .3s;
-  }
-  .mobile-social a:hover {
-    transform: scale(1.2);
-  }
-}
-</style>-->
-
- 
-
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-            const currentUrl = window.location.href;
-
-            navLinks.forEach(link => {
-                // Mark as active if href matches current full URL
-                if (link.href === currentUrl) {
-                    link.classList.add("active");
-                }
-
-                // Handle click events
-                link.addEventListener("click", function () {
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-                    this.classList.add("active");
-                });
-            });
-        });
-    </script> -->
-
-    <!-- Navbar & Hero End -->
- <!-- ====== Video Section ====== -->
-<!-- ====== Video Section ====== -->
 <div class="video-section-undernavbar">
   <video autoplay muted loop playsinline>
     <source src="../../videos/videobackground.mp4" type="video/mp4">
@@ -452,10 +278,17 @@
   <!-- Title overlay -->
   <div class="video-title-under">
     <h4>Our Services</h4>
-    <h2>Maintenance & Troubleshooting</h2>
+    <h2>Complete Installation & Commissioning</h2>
 </div>
 </div>
 <style>
+ 
+  body, html {
+  
+  margin: 0;
+  padding: 0;
+}
+
 /* ===== Tablet adjustments ===== */
 @media (max-width: 1200px) {
     body {
@@ -486,10 +319,11 @@
       <li class="breadcrumb-item">
         <a href="index#services" class="breadcrumb-link">Services</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Maintenance & Troubleshooting</li>
+      <li class="breadcrumb-item active" aria-current="page">Complete Installation & Commissioning</li>
     </ol>
   </div>
 </nav>
+<!-- Breadcrumb End -->
 <!-- Breadcrumb End -->
 <!-- ================== Maintenance & Dépannage Start ================== -->
 <div class="container-xxl py-5" id="maintenance">
